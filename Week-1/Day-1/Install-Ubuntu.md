@@ -1,4 +1,4 @@
-![17](https://github.com/ardi2105/Dumbways-Task-Devops19/assets/151701736/7fad046a-9ed5-4f69-81e9-bd9a6a3d29da)# Install Ubuntu 
+# Install Ubuntu 
 Berikut adalah langkah langkah bagaimana melakukan instalasi Ubuntu server menggunakan aplikasi virtual machine VMware. Silahkah download serta install tolls yang dibutuhkan yaitu VMware serta ISO Ubuntu server yang bisa didownload melalui website, pada saat dokumentasi ini dibuat, VMware yang digunakan adalah VMWare player versi 17 serta ISO ubuntu-22.04.3-live-server-amd64.
 
 1. Langkah pertama silahkan buka VMware yang telah diinstal, selanjutnya langsung saja klik pada pilihan Create a New Vritual Machine.
