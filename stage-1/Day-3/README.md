@@ -12,4 +12,6 @@ Salah satu Version Control System yang umum adalah GIT yaitu tools yang memiliki
 ### Alur GIT
 Alur GIT dalam prosesnya adalah di mana ketika developer sudah terhubung atau terintegrasi dengan GITHUB serta telah membuat repository GITHUB yang terhubung dengan database lokal, developer tersebut memiliki beberapa proses untuk bisa memasukan file source code ke GITHUB. Ketika seorang developer telah selesai melakukan pembuatan atau modifikasi kode, developer memiliki file tersebut di penyimpanan lokal, selanjutnya developer tersebut perlu mendeklarasikan file tersebut ke GIT dengan melakukan staged di mana menandai file yang sudah siap untuk disimpan ke database GIT. Selama di stage file belum masuk ke dalam database GIT, untuk memasukannya harus menggunakan perintah commit di mana ketika commit sudah dilakukan maka file kode sudah masuk ke dalam database GIT, selanjutnya file tersebut tinggal dimasukan ke dalam repository yang ada di website github menggunakan perintah git push.
 
+## Dokumentasi GIT
+
 
