@@ -18,8 +18,8 @@ Terdapat dua cara dalam pembagian alamat IP ke komputer yaitu secara dinamis dan
 - IP Dinamis (DHCP = Dynamic Host Control Protocol) di mana IP yang diberikan kepada komputer berubah ubah sesuai dengan IP Pool yang dimiliki oleh suatu server jaringan. Jangka waktu yang diberikan paling umum adalah 3 hari, jadi ketika waktu peminjaman (*lease*) IP Address sudah habis maka IP yang diberikan ke komputer akan berubah.
 - IP Static adalah IP yang diberikan ke komputer secara manual di mana pengguna harus memasukan IP yang tersedia di server jaringan. IP yang di daftarkan haruslah tersedia, tidak boleh sudah digunakan oleh pengguna lain atau akan menyebabkan bentrok/*ip conflict*.
 
-##Linux Shell
-Linux Shell merupakan alat atau program berbasis text/*Command Line Interface(CLI)* yang digunakan oleh seorang pengguna untuk mengoperasikan sistem operasi pada komputer. Sangat penting memahami 
+## Linux Shell
+Linux Shell merupakan alat atau program berbasis text/*Command Line Interface(CLI)* yang digunakan oleh seorang pengguna untuk mengoperasikan sistem operasi pada komputer terutama pada sistem operasi berbasis unix/linux. Sangat penting memahami untuk bisa melakukan konfigurasi atua manajemen pada server yang menggunakan CLI. 
 
 Pada dokumentasi ini akan berhubungan dengan bagaimana cara menggunakan perintah-perintah dasar Linux shell serta bagaimana cara melihat serta setting IP di linux menggunakan terminal. 
  
