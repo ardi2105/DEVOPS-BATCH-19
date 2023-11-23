@@ -24,7 +24,7 @@ Linux Shell merupakan alat atau program berbasis text/*Command Line Interface(CL
 Pada dokumentasi ini akan berhubungan dengan bagaimana cara menggunakan perintah-perintah dasar Linux shell serta bagaimana cara melihat serta setting IP di linux menggunakan terminal. 
  
 ## Perintah Perintah Pada Linux
-Pada saat membuka terminal pada linux terdapat beberapa hal yang perlu diketahui seperti yang terdapat pada gambar di bawah. 
+Pada saat membuka terminal pada linux terdapat beberapa hal yang perlu diketahui pada tampilan awal linux seperti yang terdapat pada gambar di bawah. 
 
 ![Pengetahuan Dasar](https://github.com/ardi2105/DEVOPS-BATCH-19/assets/151701736/530ed37b-c07a-4807-bdc6-21e8b8746022)
 
@@ -36,8 +36,11 @@ Pada saat membuka terminal pada linux terdapat beberapa hal yang perlu diketahui
 6. Root user (#) : Tulisan setelah directory location (bila login sebagai root)
 7. Logout dari root user : `exit`
 
+---
+### Perintah Dasar Pada Linux
+
 #### 1. ls
-   Perintah ls atau list digunakan untuk melihat file atau direktori ketika berada di dalam suatu direktori, contoh ls -la digunakan untuk melihat list file secara menurun beserta file yang tersembunyi.  
+   Perintah ls atau list digunakan untuk melihat file atau direktori ketika berada di dalam suatu direktori, contoh `ls -la` digunakan untuk melihat list file secara menurun beserta file yang tersembunyi.  
 
     ls -la
 
@@ -45,80 +48,83 @@ Pada saat membuka terminal pada linux terdapat beberapa hal yang perlu diketahui
 
    Perintah ls dapat digabungkan dengan perintah lanjutan untuk melihat list lebih detail.
     
-   1. `ls -a` atau –all
-       
+   1. `ls -a` atau –all<br/>
        Tidak mengabaikan entri file yang dimulai dengan tanda titik
-   2. `ls -A` atau –almost-all
-
+   2. `ls -A` atau –almost-all<br/>
        Tidak menampilkan titik dan titik titik (..)(yang bukan file)
-   3. `ls -l`
-
+   3. `ls -l`<br/>
        Digunakan untuk menampilkan format daftar yang panjang
-   4. `ls -g`
-
+   4. `ls -g`<br/>
        Sama seperti -l. tapi tidak menampilkan owner hanya grupnya
-   5. `ls --author`
-
+   5. `ls --author`<br/>
        Digunakan bersama -l, fungsinya buat menampilkan author setiap file
-   6. `ls -R`
-
+   6. `ls -R`<br/>
        Menampilkan subdirektori beserta file di dalamnya
-   7. `ls -h` atau –human-readable 
-
+   7. `ls -h` atau –human-readable <br/>
        Digunakan bersama perintah -l atau -s, fungsinya untuk menampilkan ukuran file yang dapat dimengerti oleh manusia
-   8. `ls -o`
-
+   8. `ls -o`<br/>
        Fungsinya sama seperti -l, tapi tidak menampilkan daftar informasi grup, hanya owner
-   9. `ls -s` atau –size
-
-       Digunakan bersama -l, menampilkan ukuran dari setiap file, ditampilkan menurut blok
-
-  10. `ls -S`
-
+   9. `ls -s` atau –size<br/>
+       Digunakan bersama -l, menampilkan ukuran dari setiap file, ditampilkan menurut blok<br/>
+  10. `ls -S`<br/>
       Mengurutkan berdasarkan ukuran file, yang berukuran besar ditampilkan lebih awal
-  11. `ls -t`
-
+  11. `ls -t`<br/>
        Mengurutkan berdasarkan waktu dimodifikasi, yang terbaru ditampilkan lebih awal
-  12. `ls -r`
-
+  12. `ls -r`<br/>
        Mengurutkan berdasarkan ukuran lebih kecil dulu
 
-#### 2. cd
-   Perintah cd digunakan untuk masuk ke dalam suatu direktori atau file di dalam linux. Perintah cd. Contoh `cd ubuntu/` akan mengantar pengguna menuju direktori/folder ubuntu.
+#### 2. mkdir
+   mkdir merupakan perintah untuk membuat sebuah direktori/folder. Contoh `mkdir -v ubuntu` makan folder ubuntu akan terbuat, dapat dilihat pada gambar di bawah. fungsi -v (verbose) untuk menampilkan keterangan pembuatan folder.
 
+  ![mkdir](https://github.com/ardi2105/DEVOPS-BATCH-19/assets/151701736/94d75bcb-7980-4778-8fce-0ebc596bc036)
+
+   Perintah lain dalam penggunaan perintah mkdir : 
+
+   1. Menampilkan Keterangan Pembuatan Folder<br/>
+       `mkdir -v/--verbose folder`<br/>
+      contoh> ardi@PC:~/Documents/Folder$ `mkdir -v Ardi`<br/>
+   3. Membuat Folder Sekaligus Membuat Subfolder Di Dalamnya<br/>
+       `mkdir -p/--parents folder folder`<br/>
+      contoh> ardi@PC:~/Documents/Folder$ `mkdir -p Ardi/Ardi`<br/>
+   5. Membuat Folder Sekaligus Membuat Subfolder Di Dalamnya Dengan Menampilkan Keterangan<br/>
+       `mkdir -vp folder/folder`<br/>
+      contoh> ardi@PC:~/Documents/Folder$ `mkdir -vp Ardi/Dua`
+   7. Membuat Lebih Dari Satu Folder<br/>
+       `mkdir folder folder`<br/>
+      contoh> ardi@PC:~/Documents/Folder$ `mkdir -v Ardi1 Ardi2 Ardi3`
+   9. Membuat Lebih Dari Satu Folder Sekaligus Membuat Subfolder Di Dalamnya<br/>
+       `mkdir -p folder/folder folder/folder`<br/>
+      contoh> ardi@PC:~/Documents/Folder$ `mkdir -pv Ardi1/dalam1 Ardi2/dalam2`
+   11. Penggunaan Kurung Kurawal Dalam Pembuatan Folder<br/>
+       Membuat folder sekaligus dengan nama depan yang sama<br/>
+       contoh> ardi@PC:~/Documents/Folder$ `mkdir -v Ardi{1,2,3}`
+
+#### 3. cd
+   Perintah cd digunakan untuk masuk ke dalam suatu direktori atau file di dalam linux. Perintah cd. Contoh `cd ubuntu/` akan mengantar pengguna menuju direktori/folder ubuntu.
+   
     cd ..
 
    ![cd](https://github.com/ardi2105/DEVOPS-BATCH-19/assets/151701736/46fe5339-907d-431b-b6d7-3349a14514c8)
 
    Adapun perintah lain dalam penggunaan perintah cd antara lain :
-   1. `cd /` 
-
+   1. `cd /` <br/>
       Berpindah ke direktori root
-   2. `cd (tab 2x)`
-
+   2. `cd (tab 2x)`<br/>
       Menampilkan direktori/folder yang dimungkinakn untuk diakses
-   3. `cd atau cd ~`
-
+   3. `cd atau cd ~`<br/>
       Bila digunakan tanpa argumen maka akan kembali ke home user
-   4. `cd .`
-
+   4. `cd .`<br/>
       Tidak ke mana mana
-   5. `cd ..` atau `cd ../`
-
+   5. `cd ..` atau `cd ../` <br/>
       Naik satu tingkat ke parent direktori (setingkat di atasnya)
-   6. `cd ../../`
-
+   6. `cd ../../`<br/>
        Naik dua tingkat direktori di atasnya
-   7. `cd -` 
-
+   7. `cd -` <br/>
        Kembali ke direktori yang sebelumnya diakses
-   8. `cd ../(nama folder)`
-
+   8. `cd ../(nama folder)`<br/>
        Menuju parent direktori lalu masuk ke folder yang ada di parent direktori tersebut
-   9. `cd ~/(nama direktori yang ada di home user)`
-
+   9. `cd ~/(nama direktori yang ada di home user)`<br/>
        Berpindah ke direktori yang ada di home user
-   10. `cd ~(nama user)`
-
+   10. `cd ~(nama user)`<br/>
        Untuk berpindah langsung ke dalam direktori user yang dipilih
 
