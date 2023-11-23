@@ -23,3 +23,24 @@ Linux Shell merupakan alat atau program berbasis text/*Command Line Interface(CL
 
 Pada dokumentasi ini akan berhubungan dengan bagaimana cara menggunakan perintah-perintah dasar Linux shell serta bagaimana cara melihat serta setting IP di linux menggunakan terminal. 
  
+## Perintah Perintah Pada Linux
+Pada saat membuka terminal pada linux terdapat beberapa hal yang perlu diketahui seperti yang terdapat pada gambar di bawah. 
+
+![Pengetahuan Dasar](https://github.com/ardi2105/DEVOPS-BATCH-19/assets/151701736/530ed37b-c07a-4807-bdc6-21e8b8746022)
+
+1. username : Tulisan di awal sebelum tanda @
+2. Hostname/computer name : Tulisan setelah tanda @
+3. Directory location : Tulisan setelah hostname
+4. User biasa $ : Tulisan setelah directory location (bila tidak login sebagai root
+5. Login sebagai root : ketik `su` atau `sudo su`
+6. Root user (#) : Tulisan setelah directory location (bila login sebagai root)
+7. Logout dari root user : `exit`
+
+#### 1. ls
+   Perintah ls atau list digunakan untuk melihat file atau direktori ketika berada di dalam suatu direktori, contoh
+
+    ls -la
+
+   ![ls -la](https://github.com/ardi2105/DEVOPS-BATCH-19/assets/151701736/e509486b-dbb2-4f95-a568-94dc0433505e)
+
+   Perintah ls dapat digabungkan dengan perintah lanjutan untuk melihat list lebih detail.
