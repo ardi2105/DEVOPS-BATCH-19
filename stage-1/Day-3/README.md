@@ -13,5 +13,27 @@ Salah satu Version Control System yang umum adalah GIT yaitu tools yang memiliki
 Alur GIT dalam prosesnya adalah di mana ketika developer sudah terhubung atau terintegrasi dengan GITHUB serta telah membuat repository GITHUB yang terhubung dengan database lokal, developer tersebut memiliki beberapa proses untuk bisa memasukan file source code ke GITHUB. Ketika seorang developer telah selesai melakukan pembuatan atau modifikasi kode, developer memiliki file tersebut di penyimpanan lokal, selanjutnya developer tersebut perlu mendeklarasikan file tersebut ke GIT dengan melakukan staged di mana menandai file yang sudah siap untuk disimpan ke database GIT. Selama di stage file belum masuk ke dalam database GIT, untuk memasukannya harus menggunakan perintah commit di mana ketika commit sudah dilakukan maka file kode sudah masuk ke dalam database GIT, selanjutnya file tersebut tinggal dimasukan ke dalam repository yang ada di website github menggunakan perintah git push.
 
 ## Dokumentasi GIT
+### GIT Reset
+GIT Reset adalah suatu cara untuk mengembalikan file yang telah di commit. Terdapat tiga jenis GIT Reset yaitu soft, mixed, dan hard
+1. `GIT Reset --soft`
 
+    GIT reset soft digunakan untuk kembali ke commit sebelumnya dengan membuat file kembali ke staged area dan tidak mengubah atau menghapus file yang ada di lokal, hanya menghapus history commit saja. 
 
+    ![git reset](https://github.com/ardi2105/DEVOPS-BATCH-19/assets/151701736/1291da34-d825-42c3-8ecd-d15488374265)
+    ![reset soft](https://github.com/ardi2105/DEVOPS-BATCH-19/assets/151701736/4e388c43-d2d1-4d22-9a74-21a19d2c2876)
+
+2. `GIT Reset --Mixed`
+
+    GIT Reset mixed untuk kembali ke commit sebelumnya serta membuat file dikeluarkan dari staged area atau masuk ke dalam untrack file dan tidak menghapus file lokal.
+
+   ![reset mixed](https://github.com/ardi2105/DEVOPS-BATCH-19/assets/151701736/f5ee4287-7e93-4d5f-a75c-f99409d377c0)
+    ![hasil git mixed](https://github.com/ardi2105/DEVOPS-BATCH-19/assets/151701736/8362f6b3-3817-4880-8177-c7431891ab12)
+
+4. `GIT Reset --Hard`
+
+    GIT Reset Hard akan mengembalikan file dari commit serta akan menghapus file dari staged area serta menghapus file yang berada di lokal. 
+
+   ![git hard](https://github.com/ardi2105/DEVOPS-BATCH-19/assets/151701736/bec0db6c-436a-4b67-ad0a-3f19a80e160e)
+
+    
+  
