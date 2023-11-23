@@ -1,6 +1,9 @@
 # DEVOPS-BATCH-19
 ##### Daily Task - Day 1 - Ardi Solehuddin
 
+-  Fundamental Devops
+-  Step by step instalasi ubuntu server
+
 ## Devops Fundamental
 DevOps merupakan gabungan dari **Development** dan **Operations** di mana ini adalah suatu prinsip yang digunakan untuk memudahkan dalam pengembangan suatu aplikasi karena semua prosesnya dapat terintegrasi dengan bantuan tools-tools yang tersedia dalam mencapai efektifitas serta efesiensi dalam perencanaan, pembangunan, pengembangan serta pengoperasian suatu aplikasi.
 
@@ -13,7 +16,7 @@ Terdapat 8 tahapan yang umum dalam proses DevOps antara lain **plan, code, build
 
 Salah satu yang dibutuhkan oleh seorang Devops adalah kemampuan mengoperasikan linux, selanjutanya adalah apa saja yang dibutuhkan untuk melakukan instalasi linux serta langkah-langkah dalam melakukan instalasi linux menggunakan aplikasi **Virtual Machine VMware**.
 
-## Install Ubuntu Requirements
+## Requirements
 Sebelum melakukan instalasi silahkah download serta install tools yang dibutuhkan yaitu [VMware Workstation Player](https://www.vmware.com/products/workstation-player/workstation-player-evaluation.html) serta [ISO Ubuntu-Server](https://ubuntu.com/download/server) yang bisa didownload melalui website. Pada saat dokumentasi ini dibuat, VMware yang digunakan adalah VMWare player versi 17 serta ISO ubuntu-22.04.3-live-server-amd64.
 
 ## Install Ubuntu Server
