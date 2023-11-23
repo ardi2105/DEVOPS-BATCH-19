@@ -44,3 +44,29 @@ Pada saat membuka terminal pada linux terdapat beberapa hal yang perlu diketahui
    ![ls -la](https://github.com/ardi2105/DEVOPS-BATCH-19/assets/151701736/e509486b-dbb2-4f95-a568-94dc0433505e)
 
    Perintah ls dapat digabungkan dengan perintah lanjutan untuk melihat list lebih detail.
+    1. `ls -a` atau –all
+       Tidak mengabaikan entri file yang dimulai dengan tanda titik
+    2. `ls -A` atau –almost-all
+       Tidak menampilkan titik dan titik titik (..)(yang bukan file)
+    3. `ls -l`
+       Digunakan untuk menampilkan format daftar yang panjang
+    4. `ls -g`
+       Sama seperti -l. tapi tidak menampilkan owner hanya grupnya
+    5. `ls --author`
+       Digunakan bersama -l, fungsinya buat menampilkan author setiap file
+    6. `ls -R`
+       Menampilkan subdirektori beserta file di dalamnya
+    7. `ls -h` atau –human-readable 
+       Digunakan bersama perintah -l atau -s, fungsinya untuk menampilkan ukuran file yang dapat dimengerti oleh manusia
+    8. `ls -o`
+       Fungsinya sama seperti -l, tapi tidak menampilkan daftar informasi grup, hanya owner
+    9. `ls -s` atau –size
+       Digunakan bersama -l, menampilkan ukuran dari setiap file, ditampilkan menurut blok
+    10.`ls -S`
+       Mengurutkan berdasarkan ukuran file, yang berukuran besar ditampilkan lebih awal
+    11. `ls -t`
+       Mengurutkan berdasarkan waktu dimodifikasi, yang terbaru ditampilkan lebih awal
+    12. `ls -r`
+       Mengurutkan berdasarkan ukuran lebih kecil dulu
+
+#### 2. 
