@@ -6,7 +6,7 @@
 ## Computer Networking
 Jaringan komputer adalah terhubungnya 2 komputer atau lebih sehingga komputer tersebut bisa saling terhubung agar dapat bertukar informasi & data serta bisa berbagi sumber daya atau resource satu sama lain. Jaringan komputer dapat terhubung baik melalui kabel ataupun tanpa kabel (*wireless*)  
 ### IP Address
-IP Address (Internet Protocol Address) adalah alamat komputer yang terdapat dalam jaringan agar dapat terhubung dengan komputer lain sehingga bisa berbagi data atau informasi. IP Address dapat diibaratkan sebagai alamat rumah di mana dibutuhkan ketika terdapat seseorang yang ingin mengirim suatu paket.  
+IP Address (Internet Protocol Address) adalah alamat komputer yang digunakan dalam jaringan agar dapat terhubung dengan komputer lain sehingga bisa berbagi data atau informasi. IP Address dapat diibaratkan sebagai alamat rumah di mana dibutuhkan ketika terdapat seseorang yang ingin mengirim suatu paket.  
 
 #### IP Private & IP Public
 IP Address terbagi menjadi dua jenis yaitu IP Pivate dengan IP  Public yang masing-masing memiliki perbedaan, antara lain :  
@@ -83,4 +83,42 @@ Pada saat membuka terminal pada linux terdapat beberapa hal yang perlu diketahui
 
        Mengurutkan berdasarkan ukuran lebih kecil dulu
 
-#### 2. 
+#### 2. cd
+   Perintah cd digunakan untuk masuk ke dalam suatu direktori atau file di dalam linux. Perintah cd. Contoh `cd ubuntu/` akan mengantar pengguna menuju direktori/folder ubuntu.
+
+    cd ..
+
+   ![cd](https://github.com/ardi2105/DEVOPS-BATCH-19/assets/151701736/46fe5339-907d-431b-b6d7-3349a14514c8)
+
+   Adapun perintah lain dalam penggunaan perintah cd antara lain :
+   1. `cd /` 
+
+      Berpindah ke direktori root
+   2. `cd (tab 2x)`
+
+      Menampilkan direktori/folder yang dimungkinakn untuk diakses
+   3. `cd atau cd ~`
+
+      Bila digunakan tanpa argumen maka akan kembali ke home user
+   4. `cd .`
+
+      Tidak ke mana mana
+   5. `cd ..` atau `cd ../`
+
+      Naik satu tingkat ke parent direktori (setingkat di atasnya)
+   6. `cd ../../`
+
+       Naik dua tingkat direktori di atasnya
+   7. `cd -` 
+
+       Kembali ke direktori yang sebelumnya diakses
+   8. `cd ../(nama folder)`
+
+       Menuju parent direktori lalu masuk ke folder yang ada di parent direktori tersebut
+   9. `cd ~/(nama direktori yang ada di home user)`
+
+       Berpindah ke direktori yang ada di home user
+   10. `cd ~(nama user)`
+
+       Untuk berpindah langsung ke dalam direktori user yang dipilih
+
