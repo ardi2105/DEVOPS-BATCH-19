@@ -152,3 +152,22 @@ Pada saat membuka terminal pada linux terdapat beberapa hal yang perlu diketahui
    10. `cd ~(nama user)`<br/>
        Untuk berpindah langsung ke dalam direktori user yang dipilih
 
+#### 6. cp
+
+   Perintah cp digunakan untuk mengcopy sebuah file atau direktori baik dalam satu direktori atau ke direktori lain.
+
+    cp nama-file nama-file-baru
+    
+![cp](https://github.com/ardi2105/DEVOPS-BATCH-19/assets/151701736/4d652fc6-d68a-4090-b777-37ef43bce0c0)
+
+   Perintah untuk mengcopy file dan folder
+
+   1. Mengcopy/Menduplikasi File <br/>
+      cp file folder_tujuan
+      contoh > ardi@PC:~/Downloads$ `cp file.html ~/Documents` <br/>
+      File akan tercopy dari Downloads ke Documents dengan syntax harus jelas di mana direktori Documents berada, karena berada di home harus ditambah symbol ~
+   3. Mengcopy/Menduplikasi Folder<br/>
+      cp -r folder folder-tujuan
+      contoh> ardi@PC:~/Downloads$ cp -r Test/ ~/Documents/<br/>
+      Folder akan tercopy dari Downloads ke Document, jika masih dalam satu folder, tidak harus pakai symbol ~ (home), contoh jika folder Test ingin di pindah ke dalam folder yang ada di folder Downloads 
+
