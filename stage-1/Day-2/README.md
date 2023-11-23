@@ -19,7 +19,7 @@ Terdapat dua cara dalam pembagian alamat IP ke komputer yaitu secara dinamis dan
 - IP Static adalah IP yang diberikan ke komputer secara manual di mana pengguna harus memasukan IP yang tersedia di server jaringan. IP yang di daftarkan haruslah tersedia, tidak boleh sudah digunakan oleh pengguna lain atau akan menyebabkan bentrok/*ip conflict*.
 
 ## Linux Shell
-Linux Shell merupakan alat atau program berbasis text/*Command Line Interface(CLI)* yang digunakan oleh seorang pengguna untuk mengoperasikan sistem operasi pada komputer terutama pada sistem operasi berbasis unix/linux. Sangat penting memahami untuk bisa melakukan konfigurasi atua manajemen pada server yang menggunakan CLI. 
+Linux Shell merupakan alat atau program berbasis text/*Command Line Interface(CLI)* yang digunakan oleh seorang pengguna untuk mengoperasikan sistem operasi pada komputer terutama pada sistem operasi berbasis unix/linux. Sangat penting memahami linux shell untuk bisa melakukan konfigurasi atua manajemen pada server yang menggunakan CLI. 
 
 Pada dokumentasi ini akan berhubungan dengan bagaimana cara menggunakan perintah-perintah dasar Linux shell serta bagaimana cara melihat serta setting IP di linux menggunakan terminal. 
  
@@ -76,6 +76,8 @@ Pada saat membuka terminal pada linux terdapat beberapa hal yang perlu diketahui
 #### 2. mkdir
    mkdir merupakan perintah untuk membuat sebuah direktori/folder. Contoh `mkdir -v ubuntu` makan folder ubuntu akan terbuat, dapat dilihat pada gambar di bawah. fungsi -v (verbose) untuk menampilkan keterangan pembuatan folder.
 
+    mkdir -v nama-direktori
+
   ![mkdir](https://github.com/ardi2105/DEVOPS-BATCH-19/assets/151701736/94d75bcb-7980-4778-8fce-0ebc596bc036)
 
    Perintah lain dalam penggunaan perintah mkdir : 
@@ -83,23 +85,45 @@ Pada saat membuka terminal pada linux terdapat beberapa hal yang perlu diketahui
    1. Menampilkan Keterangan Pembuatan Folder<br/>
        `mkdir -v/--verbose folder`<br/>
       contoh> ardi@PC:~/Documents/Folder$ `mkdir -v Ardi`<br/>
-   3. Membuat Folder Sekaligus Membuat Subfolder Di Dalamnya<br/>
+   2. Membuat Folder Sekaligus Membuat Subfolder Di Dalamnya<br/>
        `mkdir -p/--parents folder folder`<br/>
       contoh> ardi@PC:~/Documents/Folder$ `mkdir -p Ardi/Ardi`<br/>
-   5. Membuat Folder Sekaligus Membuat Subfolder Di Dalamnya Dengan Menampilkan Keterangan<br/>
+   3. Membuat Folder Sekaligus Membuat Subfolder Di Dalamnya Dengan Menampilkan Keterangan<br/>
        `mkdir -vp folder/folder`<br/>
       contoh> ardi@PC:~/Documents/Folder$ `mkdir -vp Ardi/Dua`
-   7. Membuat Lebih Dari Satu Folder<br/>
+   4. Membuat Lebih Dari Satu Folder<br/>
        `mkdir folder folder`<br/>
       contoh> ardi@PC:~/Documents/Folder$ `mkdir -v Ardi1 Ardi2 Ardi3`
-   9. Membuat Lebih Dari Satu Folder Sekaligus Membuat Subfolder Di Dalamnya<br/>
+   5. Membuat Lebih Dari Satu Folder Sekaligus Membuat Subfolder Di Dalamnya<br/>
        `mkdir -p folder/folder folder/folder`<br/>
       contoh> ardi@PC:~/Documents/Folder$ `mkdir -pv Ardi1/dalam1 Ardi2/dalam2`
-   11. Penggunaan Kurung Kurawal Dalam Pembuatan Folder<br/>
+   6. Penggunaan Kurung Kurawal Dalam Pembuatan Folder<br/>
        Membuat folder sekaligus dengan nama depan yang sama<br/>
        contoh> ardi@PC:~/Documents/Folder$ `mkdir -v Ardi{1,2,3}`
 
-#### 3. cd
+#### 3. rm
+   Perintah rm digunakan untuk menghapus sebuah file atau direktori.<br/>
+
+    rm nama-file
+    rmdir nama-folder
+  
+  > ![rmdir](https://github.com/ardi2105/DEVOPS-BATCH-19/assets/151701736/84026bdb-46f8-4ff7-a370-335aabaa9f58)<br/>
+  > Contoh menghapus folder.<br/>
+
+  >![rmfile](https://github.com/ardi2105/DEVOPS-BATCH-19/assets/151701736/6ff919ef-cb05-4966-a0fe-03619e3b227b)<br/>
+  > Contoh Menghapus File.<br/>
+   Ketika menghapus folder terdapat dua kondisi
+   1. Folder kosong		: `rmdir nama folder`
+   2. Folder ada isi		: `rm -r nama folder`
+
+#### 4. touch
+   Perintah touch digunakan untuk membuat suatu file kosong.
+
+    touch nama-file
+
+   ![touch](https://github.com/ardi2105/DEVOPS-BATCH-19/assets/151701736/3d3f8956-3c6c-40d5-8f12-629056111f87)
+   
+#### 5. cd
    Perintah cd digunakan untuk masuk ke dalam suatu direktori atau file di dalam linux. Perintah cd. Contoh `cd ubuntu/` akan mengantar pengguna menuju direktori/folder ubuntu.
    
     cd ..
