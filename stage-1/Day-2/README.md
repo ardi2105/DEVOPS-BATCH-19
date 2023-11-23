@@ -21,7 +21,7 @@ Terdapat dua cara dalam pembagian alamat IP ke komputer yaitu secara dinamis dan
 ## Linux Shell
 Linux Shell merupakan alat atau program berbasis text/*Command Line Interface(CLI)* yang digunakan oleh seorang pengguna untuk mengoperasikan sistem operasi pada komputer terutama pada sistem operasi berbasis unix/linux. Sangat penting memahami linux shell untuk bisa melakukan konfigurasi atua manajemen pada server yang menggunakan CLI. 
 
-Pada dokumentasi ini akan berhubungan dengan bagaimana cara menggunakan perintah-perintah dasar Linux shell serta bagaimana cara melihat serta setting IP di linux menggunakan terminal. 
+Pada dokumentasi ini akan berhubungan dengan bagaimana cara menggunakan sebagian perintah-perintah dasar pada Linux shell. 
  
 ## Perintah Perintah Pada Linux
 Pada saat membuka terminal pada linux terdapat beberapa hal yang perlu diketahui pada tampilan awal linux seperti yang terdapat pada gambar di bawah. 
