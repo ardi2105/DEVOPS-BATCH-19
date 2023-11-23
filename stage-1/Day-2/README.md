@@ -4,7 +4,7 @@
 -   Apa itu linux Shell? (docs command line)
 
 ## Computer Networking
-Jaringan komputer adalah terhubungnya 2 komputer atau lebih sehingga komputer tersebut bisa saling terhubung, bertukar informasi & data serta bisa berbagi sumber daya atau resource satu sama lain. Jaringan komputer dapat terhubung baik melalui kabel ataupun tanpa kabel (*wireless*)  
+Jaringan komputer adalah terhubungnya 2 komputer atau lebih sehingga komputer tersebut bisa saling terhubung agar dapat bertukar informasi & data serta bisa berbagi sumber daya atau resource satu sama lain. Jaringan komputer dapat terhubung baik melalui kabel ataupun tanpa kabel (*wireless*)  
 ### IP Address
 IP Address (Internet Protocol Address) adalah alamat komputer yang terdapat dalam jaringan agar dapat terhubung dengan komputer lain sehingga bisa berbagi data atau informasi. IP Address dapat diibaratkan sebagai alamat rumah di mana dibutuhkan ketika terdapat seseorang yang ingin mengirim suatu paket.  
 
@@ -37,7 +37,7 @@ Pada saat membuka terminal pada linux terdapat beberapa hal yang perlu diketahui
 7. Logout dari root user : `exit`
 
 #### 1. ls
-   Perintah ls atau list digunakan untuk melihat file atau direktori ketika berada di dalam suatu direktori, contoh
+   Perintah ls atau list digunakan untuk melihat file atau direktori ketika berada di dalam suatu direktori, contoh ls -la digunakan untuk melihat list file secara menurun beserta file yang tersembunyi.  
 
     ls -la
 
