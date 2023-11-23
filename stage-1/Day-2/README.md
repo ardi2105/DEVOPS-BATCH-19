@@ -32,9 +32,9 @@ Pada saat membuka terminal pada linux terdapat beberapa hal yang perlu diketahui
 2. Hostname/computer name : Tulisan setelah tanda @
 3. Directory location : Tulisan setelah hostname
 4. User biasa $ : Tulisan setelah directory location (bila tidak login sebagai root
-5. Login sebagai root : ketik `su` atau `sudo su`
-6. Root user (#) : Tulisan setelah directory location (bila login sebagai root)
-7. Logout dari root user : `exit`
+5. Root user (#) : Tulisan setelah directory location (bila login sebagai root)
+6. Login sebagai root : ketik `su` atau `sudo su
+8. Logout dari root user : `exit`
 
 ---
 ### Perintah Dasar Pada Linux
@@ -82,22 +82,22 @@ Pada saat membuka terminal pada linux terdapat beberapa hal yang perlu diketahui
 
    Perintah lain dalam penggunaan perintah mkdir : 
 
-   1. Menampilkan Keterangan Pembuatan Folder<br/>
+   1. **Menampilkan Keterangan Pembuatan Folder**<br/>
        `mkdir -v/--verbose folder`<br/>
       contoh> ardi@PC:~/Documents/Folder$ `mkdir -v Ardi`<br/>
-   2. Membuat Folder Sekaligus Membuat Subfolder Di Dalamnya<br/>
+   2. **Membuat Folder Sekaligus Membuat Subfolder Di Dalamnya**<br/>
        `mkdir -p/--parents folder folder`<br/>
       contoh> ardi@PC:~/Documents/Folder$ `mkdir -p Ardi/Ardi`<br/>
-   3. Membuat Folder Sekaligus Membuat Subfolder Di Dalamnya Dengan Menampilkan Keterangan<br/>
+   3. **Membuat Folder Sekaligus Membuat Subfolder Di Dalamnya Dengan Menampilkan Keterangan**<br/>
        `mkdir -vp folder/folder`<br/>
       contoh> ardi@PC:~/Documents/Folder$ `mkdir -vp Ardi/Dua`
-   4. Membuat Lebih Dari Satu Folder<br/>
+   4. **Membuat Lebih Dari Satu Folder**<br/>
        `mkdir folder folder`<br/>
       contoh> ardi@PC:~/Documents/Folder$ `mkdir -v Ardi1 Ardi2 Ardi3`
-   5. Membuat Lebih Dari Satu Folder Sekaligus Membuat Subfolder Di Dalamnya<br/>
+   5. **Membuat Lebih Dari Satu Folder Sekaligus Membuat Subfolder Di Dalamnya**<br/>
        `mkdir -p folder/folder folder/folder`<br/>
       contoh> ardi@PC:~/Documents/Folder$ `mkdir -pv Ardi1/dalam1 Ardi2/dalam2`
-   6. Penggunaan Kurung Kurawal Dalam Pembuatan Folder<br/>
+   6. **Penggunaan Kurung Kurawal Dalam Pembuatan Folder**<br/>
        Membuat folder sekaligus dengan nama depan yang sama<br/>
        contoh> ardi@PC:~/Documents/Folder$ `mkdir -v Ardi{1,2,3}`
 
@@ -154,7 +154,7 @@ Pada saat membuka terminal pada linux terdapat beberapa hal yang perlu diketahui
 
 #### 6. cp
 
-   Perintah cp digunakan untuk mengcopy sebuah file atau direktori baik dalam satu direktori atau ke direktori lain.
+   Perintah cp digunakan untuk mengcopy/menduplikasi sebuah file atau direktori baik dalam satu direktori atau ke direktori lain.
 
     cp nama-file nama-file-baru
     
@@ -162,12 +162,24 @@ Pada saat membuka terminal pada linux terdapat beberapa hal yang perlu diketahui
 
    Perintah untuk mengcopy file dan folder
 
-   1. Mengcopy/Menduplikasi File <br/>
+   **1. Mengcopy/Menduplikasi File <br/>**
       cp file folder_tujuan
       contoh > ardi@PC:~/Downloads$ `cp file.html ~/Documents` <br/>
       File akan tercopy dari Downloads ke Documents dengan syntax harus jelas di mana direktori Documents berada, karena berada di home harus ditambah symbol ~
-   3. Mengcopy/Menduplikasi Folder<br/>
+   **2. Mengcopy/Menduplikasi Folder<br/>**
       cp -r folder folder-tujuan
       contoh> ardi@PC:~/Downloads$ cp -r Test/ ~/Documents/<br/>
       Folder akan tercopy dari Downloads ke Document, jika masih dalam satu folder, tidak harus pakai symbol ~ (home), contoh jika folder Test ingin di pindah ke dalam folder yang ada di folder Downloads 
+
+#### 7. mv
+   Perintah mv digunakan untuk memindahkan file/direktori dari satu direktori ke direktori lain. mv juga dapat digunakan untuk melakukan rename suatu file.
+
+    mv nama-file/folder-lama nama-file/folder-baru
+
+>  ![mv rename](https://github.com/ardi2105/DEVOPS-BATCH-19/assets/151701736/364faf1d-6a82-4ee1-a63c-0cdb44dad37b)
+> Contoh rename file.<br/>
+
+>  ![mv cut](https://github.com/ardi2105/DEVOPS-BATCH-19/assets/151701736/ace42147-b03b-4098-a390-186d6bcc0d73)
+> Contoh pindah file.<br/>
+   
 
