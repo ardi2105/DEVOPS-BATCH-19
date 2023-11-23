@@ -18,6 +18,8 @@ GIT Reset adalah suatu cara untuk mengembalikan file yang telah di commit. Terda
 
 1. GIT Reset --Soft
 
+        git reset --soft <commit_number>
+
     GIT reset soft digunakan untuk kembali ke commit sebelumnya dengan membuat file kembali ke staged area dan tidak mengubah atau menghapus file yang ada di lokal, hanya menghapus history commit saja.<br/> 
 
     ![git reset](https://github.com/ardi2105/DEVOPS-BATCH-19/assets/151701736/1291da34-d825-42c3-8ecd-d15488374265)
@@ -25,16 +27,23 @@ GIT Reset adalah suatu cara untuk mengembalikan file yang telah di commit. Terda
 
 2. GIT Reset --Mixed
 
+       git reset --mixed <commit_number>
+
     GIT reset mixed untuk kembali ke commit sebelumnya serta membuat file dikeluarkan dari staged area atau masuk ke dalam untrack file dan tidak menghapus file lokal.
 
    ![reset mixed](https://github.com/ardi2105/DEVOPS-BATCH-19/assets/151701736/f5ee4287-7e93-4d5f-a75c-f99409d377c0)
     ![hasil git mixed](https://github.com/ardi2105/DEVOPS-BATCH-19/assets/151701736/8362f6b3-3817-4880-8177-c7431891ab12)
 
-4. GIT Reset --Hard
+3. GIT Reset --Hard
+
+        git reset --hard <commit_number>
 
     GIT reset hard akan mengembalikan file dari commit serta akan menghapus file dari staged area serta menghapus file yang berada di lokal. 
 
    ![git hard](https://github.com/ardi2105/DEVOPS-BATCH-19/assets/151701736/bec0db6c-436a-4b67-ad0a-3f19a80e160e)
 
-    
+### GIT Revert
+GIT Revert hampir mirip dengan GIT Reset di mana untuk kembali ke commit sebelumnya, perbedannya adalah git reset akan merubah commit history dengan menghapus commit, sedangkan git revert tidak merubah commit history melainkan akan kembali ke commit sebelumnya dengan membuat commit yang baru.
+
+
   
