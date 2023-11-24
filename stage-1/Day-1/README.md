@@ -168,4 +168,4 @@ Jika sudah, dapat dilihat settingan DCHP sudah berubah menjadi static.
 
   ![40](https://github.com/ardi2105/DEVOPS-BATCH-19/assets/151701736/f8c5dffa-1762-4ac2-9aa1-77a35143be17)
 
-Proses dalam melakukan instalasi server ubuntu sudah selesai.
+Instalasi server ubuntu sudah selesai.
