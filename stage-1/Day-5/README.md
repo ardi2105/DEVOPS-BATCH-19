@@ -136,7 +136,7 @@ Jika sudah save script yang sudah dibuat dan keluar dari nano, kemudian jalankan
 
    ![run python web](https://github.com/ardi2105/DEVOPS-BATCH-19/assets/151701736/46a7d6ab-2926-4bba-8be9-60335a12eff8)
 
-Bisa dicek bahwa aplikasi sudah berjalan dengan pada web dengan memasukan IP beserte Port.
+Bisa dicek bahwa aplikasi sudah berjalan pada web dengan memasukan IP beserta Port.
 
 ### Golang
 Go adalah bahasa pemrograman open-source yang dikembangkan oleh Google. Berguna untuk mengembangkan web, layanan cloud dan jaringan, serta jenis perangkat lunak lainnya
@@ -205,4 +205,34 @@ Kemudian jalankan aplikasi dengan perintah
   ![running build](https://github.com/ardi2105/DEVOPS-BATCH-19/assets/151701736/8d05d477-1c1e-4895-9835-c56060ee87d1)
 
 ## PM2 & Implementation
+Aplikasi PM2 merupakan daemon process manager yang membantu dalam mengelola dan menjaga aplikasi agar tetap berjalan. PM2 dioperasikan lewat command line atau berbasis CLI (Command Line Interface) yang sederhana dan intuitif.
 
+### Implementation
+#### 1. Instalasi PM2
+Untuk melakukan instalasi PM2 bisa menggunakan perintah
+
+    npm install pm2 -g
+
+  ![install pm2](https://github.com/ardi2105/DEVOPS-BATCH-19/assets/151701736/95df2792-41a2-4f5f-84a5-362973a9315a)
+
+#### 2. Starting pm2
+Untuk menggunakan aplikasi pm2 cukup mudah, bisa langsung menggunakan perintah `pm2 start` pada aplikasi yang telah kita buat sebelumnya, pada contoh ini bisa menggunakan aplikasi sederhana yang kita buat sebelumnya yaitu `python` dan `nodejs`
+
+Pada aplikasi python terlebih dahulu masuk ke dalam folder aplikasi python kemudian bisa menggunakan perintah
+
+    pm2 start index.py --name python3 -interpreter python3
+
+Untuk aplikasi nodejs masuk terlebih dahulu ke dalam folder aplikasi nodejs kemudian bisa menggunakan perintah 
+
+    pm2 start index.js
+
+  ![pm2](https://github.com/ardi2105/DEVOPS-BATCH-19/assets/151701736/0739c52e-6de8-40f1-9818-c31227d8fb50)
+
+Kemudian lakukan pengecekan pada web apakah aplikasi sudah berjalan dengan memasukan ip dan port tiap aplikasi yang sudah dibuat sebelumnya.
+
+  ![pm2 all load](https://github.com/ardi2105/DEVOPS-BATCH-19/assets/151701736/54baf85c-5ce7-4b72-930c-7a2f0329e488)
+
+Dapat dilihat aplikasi python yang berjalan pada port 5000 dapat berjalan begitu juga dengan nodejs yang berjalan pada port 3000 dapat berjalan secara bersamaan.
+
+#### 3. Stopping pm2
+Untuk menghentikan 
