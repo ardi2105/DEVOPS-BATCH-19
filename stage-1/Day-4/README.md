@@ -136,7 +136,7 @@ Cek status ufw menggunakan perintah ufw status verbose (verbose untuk melihat st
    Secara default ketika ufw baru pertama kali dinyalakan, incoming atau semua paket yang masuk akan dalam status deny atau ditolak, outgoing atau paket yang keluar diperbolehkan serta routed tidak aktif.<br/>
 
 #### 4. ufw deny incoming
-Karena secara default incoming pada status deny, maka server akan memblokir semua akses yang masuk. dapat dilihat pada gambar server tidak dapat diakses
+Karena secara default incoming pada status deny, maka firewall dari server akan memblokir semua akses yang masuk, dapat dilihat pada gambar server yang tidak dapat merespon atau tidak dapat diakses
 
    ![deny incoming](https://github.com/ardi2105/DEVOPS-BATCH-19/assets/151701736/da01311b-34a4-4a5e-b24e-dacdbecca05e)
 
