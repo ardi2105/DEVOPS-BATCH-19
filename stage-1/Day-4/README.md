@@ -69,5 +69,40 @@ Untuk keluar dari teks editor nano dapat menggunakan kombinasi `ctrl+x`, jika ti
    ![ctrl+x](https://github.com/ardi2105/DEVOPS-BATCH-19/assets/151701736/87bbfd6f-13b0-4f16-91d1-25415e6a41b2)
    
 ## Teks Manipulation
+#### 1. cat
+perintah `cat` dapat digunakan untuk melihat suatu isi file
+
+   ![cat](https://github.com/ardi2105/DEVOPS-BATCH-19/assets/151701736/ca5b5e22-369c-43b1-aa7f-51e6c804a833)
+
+
+#### 2. diff
+Perintah `diff` untuk melihat isi dari dua file dan menunjukan perbedaan antara kedua files. 
+
+   ![diff](https://github.com/ardi2105/DEVOPS-BATCH-19/assets/151701736/85533fbd-41a8-4735-acbf-e02504a7c0a1)
+
+
+#### 3. wc
+Perintah `wc` digunakan untuk melihat jumlah baris, kata dan karakter yang terdapat pada suatu file
+
+   ![wc](https://github.com/ardi2105/DEVOPS-BATCH-19/assets/151701736/7e0b2aa5-c7e7-4f5c-ba82-3a53c167f9e1)
+
+
+#### 4. nl
+Perintah `nl` digunakan untuk menampilkan isi beserta jumlah baris pada suatu file
+
+   ![nl](https://github.com/ardi2105/DEVOPS-BATCH-19/assets/151701736/238fdc56-113b-4ee5-8883-32320ef9cb35)
+
+
+#### 5. head
+Perintah `head` digunakan untuk melihat beberapa baris pertama saja pada sebuah file jika di dalam file terdapat banyak text atau banyak baris. 
+
+   ![head](https://github.com/ardi2105/DEVOPS-BATCH-19/assets/151701736/856774e1-74a5-40f0-8a69-5de00c4584ec)
+
+
+#### 6. tail
+Perinta `tail` digunakan untuk melihat beberapa baris terakhir saja pada sebuah file, fungsi ini biasanya digunakan unutk melihat log terakhir dari suatu aktivitas.
+
+   ![tail](https://github.com/ardi2105/DEVOPS-BATCH-19/assets/151701736/6c75a45b-5162-4848-9ddc-23adf5d3cf2d)
+
 
 ## Firewall
