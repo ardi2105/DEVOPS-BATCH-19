@@ -145,20 +145,29 @@ Go adalah bahasa pemrograman open-source yang dikembangkan oleh Google. Berguna 
 
     wget https://go.dev/dl/go1.21.4.linux-amd64.tar.gz
 
+  ![install golang](https://github.com/ardi2105/DEVOPS-BATCH-19/assets/151701736/2c6f6188-e937-4b81-8e0f-2fdc0e89a3ab)
+
 #### 2. Extract Arsip
 Kemudian extract arsip tersebut ke /usr/local. dengan perintah 
 
     sudo tar -C /usr/local -xzf go1.21.4.linux-amd64.tar.gz 
+
+  ![extract arsip](https://github.com/ardi2105/DEVOPS-BATCH-19/assets/151701736/462136df-fc4d-4284-832f-746970f8bc93)
+
 #### 3. Path binary
 Tambahkan path binary Go ke PATH environment variable.
 
     echo "export PATH=$PATH:/usr/local/go/bin" >> ~/.bashrc
     source ~/.bashrc
 
+  ![path binary go](https://github.com/ardi2105/DEVOPS-BATCH-19/assets/151701736/4969b304-b13f-4ec6-b573-9abad562372d)
+
 #### 4. Cek go
 Lakukan pengecekan go dengan perintah
 
     go version
+
+  ![go version](https://github.com/ardi2105/DEVOPS-BATCH-19/assets/151701736/f4a03949-af07-466c-959f-f4eb48c9fe1a)
 
 #### 5. Membuat aplikasi sederhana
 Untuk membuat sebuah aplikasi sederhana, untuk membuat aplikasi buat terlebih dahulu script dalam file bernama index.py dengan perintah
@@ -174,19 +183,26 @@ Untuk membuat sebuah aplikasi sederhana, untuk membuat aplikasi buat terlebih da
       fmt.Println("Hello World!")
     }
 
+  ![index go](https://github.com/ardi2105/DEVOPS-BATCH-19/assets/151701736/3e953e2e-6280-4424-810b-db5de5d7924a)
+
 Jalankan aplikasi dengan perintah
     
     go run index.go
+
+  ![go run index](https://github.com/ardi2105/DEVOPS-BATCH-19/assets/151701736/28327e65-1884-41a4-8cee-5c57096d38c4)
 
 #### 6. Build aplikasi 
 Jika ingin melakukan build aplikasi gunakan perintah 
 
     go build index.go
 
+  ![build go](https://github.com/ardi2105/DEVOPS-BATCH-19/assets/151701736/aa3b8c39-2823-40fe-8939-3a27d3713f0b)
+
 Kemudian jalankan aplikasi dengan perintah
 
     ./index
 
+  ![running build](https://github.com/ardi2105/DEVOPS-BATCH-19/assets/151701736/8d05d477-1c1e-4895-9835-c56060ee87d1)
 
 ## PM2 & Implementation
 
