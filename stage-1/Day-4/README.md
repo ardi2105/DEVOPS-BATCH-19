@@ -1,9 +1,9 @@
 # DEVOPS-BATCH-19
 ##### Daily Task - Day 4 - Ardi Solehuddin
 
--  Jelaskan apa itu teks editor (docs shortcut" nya apa)
--  manipulation teks (docs manipulation teks)
--  penjelasan apa itu firewall, fungsi firewall, di gunakan untuk apa (docs ufw , ex allow, deny )
+-  Jelaskan Apa Itu Teks Editor (Docs Shortcut)
+-  Manipulation Teks (Docs Manipulation Teks)
+-  Penjelasan Apa Itu Firewall, Fungsi Firewall, Di Gunakan Untuk Apa (Docs ufw , ex allow, deny)
 
 ## Teks Editor
 
