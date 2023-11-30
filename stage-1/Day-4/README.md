@@ -9,16 +9,16 @@
 Teks Editor adalah suatu program yang biasa digunakan untuk melakukan suatu editing file teks. Pada sistem operasi linux text editor ini berjalan di atas terminal dan biasa digunakan oleh server yang berbasis CLI.
 
 #### Jenis Jenis Teks Editor Linux
-- Nano
-  Teks editor nano berbasis konsol merupakan yang paling umum bagi pengguna linux, biasanya teks editor ini digunakan oleh pemula yang baru menggunakan linux karena penggunaannya yang cukup mudah.
-- VIM
-  Sama seperti nano yang merupakan teks editor berbasis VIM, pengguna untuk VIM ini lebih banyak digunakan oleh para sysadmin atau seorang yang sudah mahir karena penggunaan VIM yang cukup rumit. 
-- Emacs
-  Emac juga merupakan teks editor berbasis konsol yang memiliki keunggulan tersendiri. Emacs dapat dikombinasikan dengan macros untuk keperluan automasi. 
-- Gedit
-  Pada Linux Dekstop GNOME, gedit merupakan teks editor berbasis GUI yang tampilannya mirip seperti notepad di windows sehingga lebih mudah untuk digunakan dibanding dengan teks editor sebelumnya yang berbasis konsol.  
-- Geany
-  Selain Gedit yang merupakan teks editor berbasis GUI, terdapat juga geany yaitu editor yang berbasis GTK+ Toolkit yang penggunaan cocok untuk seorang programmer atau developer. 
+- **Nano<br/>**
+  Teks editor nano berbasis konsol merupakan yang paling umum bagi pengguna linux, biasanya teks editor ini digunakan oleh pemula yang baru menggunakan linux karena penggunaannya yang cukup mudah. Penggunaannya cukup ketikan `nano (nama_file)` pada terminal linux.
+- **VIM<br/>**
+  Sama seperti nano yang merupakan teks editor berbasis VIM, pengguna untuk VIM ini lebih banyak digunakan oleh para sysadmin atau seorang yang sudah mahir karena penggunaan VIM yang cukup rumit. Penggunannya sama seperti nano cukup ketik `vim (nama_file)` pada terminal linux.
+- **Emacs<br/>**
+  Emac juga merupakan teks editor berbasis konsol yang memiliki keunggulan tersendiri. Emacs dapat dikombinasikan dengan macros untuk keperluan automasi. Untuk mengakses atau menggunakan emacs cukup ketikan `emacs` pada terminal, jika belum ada dapat diinstall dengan perinta `sudo apt install emacs`
+- **Gedit<br/>**
+  Pada Linux Dekstop GNOME, gedit merupakan teks editor berbasis GUI yang tampilannya mirip seperti notepad di windows sehingga lebih mudah untuk digunakan dibanding dengan teks editor sebelumnya yang berbasis konsol. Akses gedit menggunakan perintah `gedit (nama_file)`.
+- **Geany<br/>**
+  Selain Gedit yang merupakan teks editor berbasis GUI, terdapat juga geany yaitu editor yang berbasis GTK+ Toolkit yang penggunaan cocok untuk seorang programmer atau developer. Geany dapat digunakan dengan perintah `geany (nama_file)`. 
 ## Teks Manipulation
 
 ## Firewall
