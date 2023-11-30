@@ -124,3 +124,64 @@ Load balancing merupakan proses pendistribusian traffic atau lalu lintas jaringa
 ### Konfigurasi Load Balancing
 Sebelumnya saya sudah membuat tiga buah virtual server bernama akuma, voxy dan zero. Server akuma nantinya akan bertindak sebagai load balancer dan server voxy dengan server zero akan berjalan sebagai server dari aplikasi.
 
+   ![multipass](https://github.com/ardi2105/DEVOPS-BATCH-19/assets/151701736/f058123a-e0d9-4310-9c6a-6345388dbfc7)
+
+   ![zero](https://github.com/ardi2105/DEVOPS-BATCH-19/assets/151701736/4264a76c-2256-45b4-aa90-6ed472b582c0)
+
+   ![voxy](https://github.com/ardi2105/DEVOPS-BATCH-19/assets/151701736/90622205-a109-4414-bf66-110cc920c315)
+
+#### 1. Langkah pertama masuk ke dalam file konfigurasi file proxy yang sudah dibuat sebelumnya pada server akuma dengan perintah:
+
+        sudo nano /etc/nginx/akuma/my.reverse-proxy.conf
+
+   ![sudo nano myreverse](https://github.com/ardi2105/DEVOPS-BATCH-19/assets/151701736/30fba49c-e33b-4631-9add-c33ae408c8bb)
+
+Kemudian masukan konfigurasi ke dalam file tersebut 
+
+   ![upstream](https://github.com/ardi2105/DEVOPS-BATCH-19/assets/151701736/aacdaf4d-11f2-4a26-b516-665ce3039a95)
+
+        upstream domain {
+            server 10.182.205.169:3000;
+            server 10.182.205.76:3000;
+            server 10.182.205.185:3000;
+        }
+        server {
+            server_name akuma.xyz;
+
+            location / {
+                 proxy_pass http://127.0.0.1:3000;
+                }
+            }
+
+Masukan IP ketiga server pada bagian upstream diikuti oleh port yang digunakan oleh aplikasi.
+
+#### 2. Check dan restart nginx jika sudah tidak ada error setelah melakkukan konfigurasi.
+
+    sudo nginx -t
+<br/>
+
+    sudo systemctl restart nginx
+
+   ![sudo nginx   restart](https://github.com/ardi2105/DEVOPS-BATCH-19/assets/151701736/ba2cf152-d01f-448a-9c15-a6da810d4911)
+
+#### 3. Jalankan aplikasi pada kedua server yaitu server voxy dan zero dengan perintah :
+    npm start
+
+   ![zero start](https://github.com/ardi2105/DEVOPS-BATCH-19/assets/151701736/d54e67c4-8a9d-46f2-bfa7-603d646b25b5)
+
+   ![voxy start](https://github.com/ardi2105/DEVOPS-BATCH-19/assets/151701736/1bfc7ee1-53cc-4008-b964-ffdaa17e2a71)
+
+#### 4. Periksa apakah aplikasi berhasil berjalan
+
+   ![akuma success](https://github.com/ardi2105/DEVOPS-BATCH-19/assets/151701736/69e872f1-6c22-435f-b65a-807bf05865c9)
+
+Jika aplikasi dapat berjalan, lakukan pengujian load balancing dengan mematikan salah satu server, pada kasus ini server voxy dimatikan
+
+   ![voxy died](https://github.com/ardi2105/DEVOPS-BATCH-19/assets/151701736/8e2f1cd7-667b-477a-b685-8bec1982b136)
+
+Kemudian lakukan pengecekan kembali apakah web tetap berjalan
+
+   ![akuma success](https://github.com/ardi2105/DEVOPS-BATCH-19/assets/151701736/554b4c53-a031-42ec-bbd7-ab9a06ebf030)
+
+Dapat dilihat bahwa aplikasi web tetap berjalan menandakan bahwa load balance berhasil.
+   
