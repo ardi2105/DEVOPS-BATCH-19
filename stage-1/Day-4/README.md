@@ -109,4 +109,25 @@ Perinta `tail` digunakan untuk melihat beberapa baris terakhir saja pada sebuah 
 Uncomplicated firewall (UFW) adalah tools yang digunakan untuk melaukan konfigurasi firewall pada linux iptables. Firewall berguna untuk melindungi komputer dari ancaman yang terdapat di jaringan internet di mana firewall dapat melakukan filtrasi atas akses mana saja yang diperbolehkan dalam mengakses suatu komputer atau server melalui jaringan.
 
 ## Penggunaan UFW
-Sebelum melakukan konfigurasi ufw, lakukan instalasi terlebih dahulu ufw menggunakan perintah `sudo apt install ufw`. Pada kasus kali ini saya menggunakan dua buah server untuk melakukan testing keberhasilan ufw. saya menggunakan server saya sendiri serta server yang sudah buat yaitu server akuma. 
+Pada kasus kali ini saya menggunakan dua buah server untuk melakukan testing berhasil atau tidaknya ufw. saya menggunakan server akuma serta server voxy. 
+
+1. Instalasi UFW
+Sebelum melakukan konfigurasi ufw, lakukan instalasi terlebih dahulu ufw menggunakan perintah `sudo apt install ufw`.
+
+2. Mengaktifkan UFW
+Untuk mengaktifkan firewall dapat menggunakan perintah
+
+       sudo ufw enable
+
+
+   
+4. Cek status UFW 
+Cek status ufw menggunakan perintah ufw status verbose (verbose untuk melihat status ufw secara detail)
+
+        sudo ufw status verbose
+
+
+Secara default ketika ufw baru pertama kali dinyalakan, incoming atau semua paket yang masuk akan dalam status deny atau ditolak, outgoing atau paket yang keluar diperbolehkan serta routed tidak aktif. 
+
+5. ufw deny incoming
+Karena secara default incoming pada status deny, maka server akan memblikir semua akses yang masuk. dapat dilihat pada gambar server tidak dapat diakses 
