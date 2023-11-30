@@ -8,7 +8,7 @@
 ## Teks Editor
 Teks Editor adalah suatu program yang biasa digunakan untuk melakukan suatu editing file teks. Pada sistem operasi linux text editor ini berjalan di atas terminal dan biasa digunakan oleh server yang berbasis CLI.
 
-#### Jenis Jenis Teks Editor Linux
+### Jenis Jenis Teks Editor Linux
 - **Nano<br/>**
   Teks editor nano berbasis konsol merupakan yang paling umum bagi pengguna linux, biasanya teks editor ini digunakan oleh pemula yang baru menggunakan linux karena penggunaannya yang cukup mudah. Penggunaannya cukup ketikan `nano (nama_file)` pada terminal linux.
 - **VIM<br/>**
@@ -18,7 +18,18 @@ Teks Editor adalah suatu program yang biasa digunakan untuk melakukan suatu edit
 - **Gedit<br/>**
   Pada Linux Dekstop GNOME, gedit merupakan teks editor berbasis GUI yang tampilannya mirip seperti notepad di windows sehingga lebih mudah untuk digunakan dibanding dengan teks editor sebelumnya yang berbasis konsol. Akses gedit menggunakan perintah `gedit (nama_file)`.
 - **Geany<br/>**
-  Selain Gedit yang merupakan teks editor berbasis GUI, terdapat juga geany yaitu editor yang berbasis GTK+ Toolkit yang penggunaan cocok untuk seorang programmer atau developer. Geany dapat digunakan dengan perintah `geany (nama_file)`. 
+  Selain Gedit yang merupakan teks editor berbasis GUI, terdapat juga geany yaitu editor yang berbasis GTK+ Toolkit yang penggunaan cocok untuk seorang programmer atau developer. Geany dapat digunakan dengan perintah `geany (nama_file)`.
+
+### Nano
+Pada pembahasan kali ini akan menjelaskan beberapa shortcut yang digunakan pada editor nano. 
+#### 1. Membuka nano
+Untuk membuka nano cukup ketik `nano` pada terminal jika ingin membuat file baru atau dengan mengetikan `nano (diikuti nama file)` jika ingin membuka suatu file.
+
+#### 2. Membuka file dari dalam nano
+Untuk membuka file ketika sudah membuka nano bisa menggunakan kombinasi `ctrl+r` diikuti dengan kombinasi `ctrl+t` untuk melihat file file yang ingin dibuka yang terdapat pada direktori.
+
+#### 3. 
+
 ## Teks Manipulation
 
 ## Firewall
