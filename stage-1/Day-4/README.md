@@ -3,7 +3,7 @@
 
 -  Jelaskan Apa Itu Teks Editor (Docs Shortcut)
 -  Manipulation Teks (Docs Manipulation Teks)
--  Penjelasan Apa Itu Firewall, Fungsi Firewall, Kegunaan Firewall (Docs UFW)
+-  Penjelasan Apa Itu Firewall (Docs UFW)
 
 ## Teks Editor
 Teks Editor adalah suatu program yang biasa digunakan untuk melakukan suatu editing file teks. Pada sistem operasi linux text editor ini berjalan di atas terminal dan biasa digunakan oleh server yang berbasis CLI.
@@ -70,7 +70,7 @@ Untuk keluar dari teks editor nano dapat menggunakan kombinasi `ctrl+x`, jika ti
    
 ## Teks Manipulation
 #### 1. cat
-perintah `cat` dapat digunakan untuk melihat suatu isi file
+perintah `cat` dapat digunakan untuk melihat suatu isi file.
 
    ![cat](https://github.com/ardi2105/DEVOPS-BATCH-19/assets/151701736/ca5b5e22-369c-43b1-aa7f-51e6c804a833)
 
@@ -82,13 +82,13 @@ Perintah `diff` untuk melihat isi dari dua file dan menunjukan perbedaan antara 
 
 
 #### 3. wc
-Perintah `wc` digunakan untuk melihat jumlah baris, kata dan karakter yang terdapat pada suatu file
+Perintah `wc` digunakan untuk melihat jumlah baris, kata dan karakter yang terdapat pada suatu file.
 
    ![wc](https://github.com/ardi2105/DEVOPS-BATCH-19/assets/151701736/7e0b2aa5-c7e7-4f5c-ba82-3a53c167f9e1)
 
 
 #### 4. nl
-Perintah `nl` digunakan untuk menampilkan isi beserta jumlah baris pada suatu file
+Perintah `nl` digunakan untuk menampilkan isi beserta jumlah baris pada suatu file.
 
    ![nl](https://github.com/ardi2105/DEVOPS-BATCH-19/assets/151701736/238fdc56-113b-4ee5-8883-32320ef9cb35)
 
@@ -106,3 +106,7 @@ Perinta `tail` digunakan untuk melihat beberapa baris terakhir saja pada sebuah 
 
 
 ## Firewall
+Uncomplicated firewall (UFW) adalah tools yang digunakan untuk melaukan konfigurasi firewall pada linux iptables. Firewall berguna untuk melindungi komputer dari ancaman yang terdapat di jaringan internet di mana firewall dapat melakukan filtrasi atas akses mana saja yang diperbolehkan dalam mengakses suatu komputer atau server melalui jaringan.
+
+## Penggunaan UFW
+Sebelum melakukan konfigurasi ufw, lakukan instalasi terlebih dahulu ufw menggunakan perintah `sudo apt install ufw`. Pada kasus kali ini saya menggunakan dua buah server untuk melakukan testing keberhasilan ufw. saya menggunakan server saya sendiri serta server yang sudah buat yaitu server akuma. 
