@@ -118,10 +118,9 @@ Aplikasi tersebut juga bisa dijalankan menggunakan `pm2` yang sudah kita install
 
    ![pm2start](https://github.com/ardi2105/DEVOPS-BATCH-19/assets/151701736/ea60e3d7-6fac-4248-9e0c-a31febfb2ae5)
 
-
-
-
-
-
-
 ## Load Balancing
+Load balancing merupakan proses pendistribusian traffic atau lalu lintas jaringan secara efisien ke dalam sekelompok server, atau yang lebih dikenal dengan server pool atau server farm. Load balancing ini berguna agar salah satu server dari website yang mendapatkan banyak lalu linta kunjungan tidak mengalami kelebihan beban.
+
+### Konfigurasi Load Balancing
+Sebelumnya saya sudah membuat tiga buah virtual server bernama akuma, voxy dan zero. Server akuma nantinya akan bertindak sebagai load balancer dan server voxy dengan server zero akan berjalan sebagai server dari aplikasi.
+
