@@ -73,7 +73,7 @@ Jika tidak terdapat error, rertart nginx agar konfigurasi yang dibuat bisa berja
 
   ![sudo restart](https://github.com/ardi2105/DEVOPS-BATCH-19/assets/151701736/e99cc898-d8e6-4b1a-ac60-717af1edd77f)
 
-#### 4. Selanutnya adalah membuat virtual host pada lokal server yang berada di dalam file `/etc/hosts`.
+#### 4. Selanjutnya adalah membuat virtual host pada lokal server yang berada di dalam file `/etc/hosts`.
 
     sudo nano /etc/hosts
 
