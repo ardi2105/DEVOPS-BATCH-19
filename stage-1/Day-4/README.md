@@ -25,8 +25,18 @@ Pada pembahasan kali ini akan menjelaskan beberapa shortcut yang digunakan pada 
 #### 1. Membuka nano
 Untuk membuka nano cukup ketik `nano` pada terminal jika ingin membuat file baru atau dengan mengetikan `nano (diikuti nama file)` jika ingin membuka suatu file.
 
+   ![nano](https://github.com/ardi2105/DEVOPS-BATCH-19/assets/151701736/b4cf6884-5d00-4741-ba66-d6889629fc24)
+
+   ![nano-editor](https://github.com/ardi2105/DEVOPS-BATCH-19/assets/151701736/e31e6ddc-7985-4ea1-87e5-4a6dbbdfeb56)
+
+
 #### 2. Membuka file dari dalam nano
-Untuk membuka file ketika sudah membuka nano bisa menggunakan kombinasi `ctrl+r` diikuti dengan kombinasi `ctrl+t` untuk melihat file file yang ingin dibuka yang terdapat pada direktori.
+Untuk membuka file ketika sudah membuka nano bisa menggunakan kombinasi `ctrl+r` diikuti dengan kombinasi `ctrl+t` untuk melihat file yang ingin dibuka yang terdapat pada direktori.
+
+   ![ctrl+r](https://github.com/ardi2105/DEVOPS-BATCH-19/assets/151701736/6198295f-f48d-4dd4-9dd1-67a10022351d)
+
+   ![ctrl+t](https://github.com/ardi2105/DEVOPS-BATCH-19/assets/151701736/91e22cf6-d24e-4b52-a967-d869795555c1)
+
 
 #### 3. 
 
