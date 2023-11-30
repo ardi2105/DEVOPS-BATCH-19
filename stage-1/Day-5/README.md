@@ -84,7 +84,7 @@ Jika sudah keluar serta save script, kemudian jalankan aplikasi dengan perintah 
 
    ![node index](https://github.com/ardi2105/DEVOPS-BATCH-19/assets/151701736/ef160a04-378c-44ac-962d-45b717c24dac)
 
-Bisa dicek bahwa aplikasi sudah berjalan dengan pada web.
+Bisa dicek bahwa aplikasi sudah berjalan pada web.
 
    ![Hello-World](https://github.com/ardi2105/DEVOPS-BATCH-19/assets/151701736/678d4f85-b5ee-43cb-9591-aaaed89ae15f)
 
@@ -113,7 +113,7 @@ dilanjutkan dengan instalasi flask dengan perintah.
 
   ![install flask](https://github.com/ardi2105/DEVOPS-BATCH-19/assets/151701736/44202b19-2fbc-42b4-9a07-19f5923d7e97)
 
-Jika sudah kita bisa membuat sebuah aplikasi sederhana python3. Untuk membuat perintah buat terlebih dahulu script dalam file bernama index.py dengan perintah.
+Jika sudah kita bisa membuat sebuah aplikasi sederhana python3. Untuk membuat aplikasi buat terlebih dahulu script dalam file bernama index.py dengan perintah.
 
     nano index.py
 <br/>
@@ -126,7 +126,7 @@ Jika sudah kita bisa membuat sebuah aplikasi sederhana python3. Untuk membuat pe
     if __name__ == "__main__":
       app.run(host='10.182.205.169')
       
-> note karena saya menggunakan virtual machine, maka dari itu saya menambahkan IP Adress virtual machine agar aplikasi dapat berjalan, IP Adress dapat disesuaikan. 
+> note karena saya menggunakan virtual machine, maka dari itu saya menambahkan IP Address virtual machine agar aplikasi dapat berjalan, IP Address dapat disesuaikan. 
 
    ![nano index](https://github.com/ardi2105/DEVOPS-BATCH-19/assets/151701736/f25868a5-917a-4c0d-b68e-76d2aae8fd6c)
 
@@ -207,7 +207,7 @@ Kemudian jalankan aplikasi dengan perintah.
   ![running build](https://github.com/ardi2105/DEVOPS-BATCH-19/assets/151701736/8d05d477-1c1e-4895-9835-c56060ee87d1)
 
 ## PM2 & Implementation
-Aplikasi PM2 merupakan daemon process manager yang membantu dalam mengelola dan menjaga aplikasi agar tetap berjalan. PM2 dioperasikan lewat command line atau berbasis CLI (Command Line Interface) yang sederhana dan intuitif.
+Aplikasi PM2 merupakan daemon process manager yang membantu dalam mengelola dan menjaga aplikasi agar tetap berjalan. PM2 dioperasikan lewat command line atau berbasis CLI (Command Line Interface) yang sederhana.
 
 ### Implementation
 #### 1. Instalasi PM2
