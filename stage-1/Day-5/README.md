@@ -138,5 +138,55 @@ Jika sudah save script yang sudah dibuat dan keluar dari nano, kemudian jalankan
 
 Bisa dicek bahwa aplikasi sudah berjalan dengan pada web dengan memasukan IP beserte Port.
 
+### Golang
+Go adalah bahasa pemrograman open-source yang dikembangkan oleh Google. Berguna untuk mengembangkan web, layanan cloud dan jaringan, serta jenis perangkat lunak lainnya
+
+#### 1. Download terlebih dahulu engine go dengan perintah berikut
+
+    wget https://go.dev/dl/go1.21.4.linux-amd64.tar.gz
+
+#### 2. Extract Arsip
+Kemudian extract arsip tersebut ke /usr/local. dengan perintah 
+
+    sudo tar -C /usr/local -xzf go1.21.4.linux-amd64.tar.gz 
+#### 3. Path binary
+Tambahkan path binary Go ke PATH environment variable.
+
+    echo "export PATH=$PATH:/usr/local/go/bin" >> ~/.bashrc
+    source ~/.bashrc
+
+#### 4. Cek go
+Lakukan pengecekan go dengan perintah
+
+    go version
+
+#### 5. Membuat aplikasi sederhana
+Untuk membuat sebuah aplikasi sederhana, untuk membuat aplikasi buat terlebih dahulu script dalam file bernama index.py dengan perintah
+
+    nano index.go
+  <br/>
+    
+    package main
+
+    import "fmt"
+
+    func main() {
+      fmt.Println("Hello World!")
+    }
+
+Jalankan aplikasi dengan perintah
+    
+    go run index.go
+
+#### 6. Build aplikasi 
+Jika ingin melakukan build aplikasi gunakan perintah 
+
+    go build index.go
+
+Kemudian jalankan aplikasi dengan perintah
+
+    ./index
+
+
 ## PM2 & Implementation
 
