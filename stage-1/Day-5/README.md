@@ -235,4 +235,11 @@ Kemudian lakukan pengecekan pada web apakah aplikasi sudah berjalan dengan memas
 Dapat dilihat aplikasi python yang berjalan pada port 5000 dapat berjalan begitu juga dengan nodejs yang berjalan pada port 3000 dapat berjalan secara bersamaan.
 
 #### 3. Stopping pm2
-Untuk menghentikan 
+Untuk menghentikan aplikasi yang sedang berjalan pada pm2, dapat menggunakan perintah stop diikuti nama aplikasi pada pm2 list
+
+    pm2 list
+    pm2 stop index
+    pm2 stop python3
+
+  ![stop pm2](https://github.com/ardi2105/DEVOPS-BATCH-19/assets/151701736/294e68ed-7f67-4d79-a1d3-21cc7541528d)
+
