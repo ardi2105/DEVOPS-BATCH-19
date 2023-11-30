@@ -90,5 +90,53 @@ Bisa dicek bahwa aplikasi sudah berjalan dengan pada web.
 
 Untuk menghentikan aplikasi cukup klik `ctrl+c`
 
+
+### python3 
+Python merupakan bahasa pemrograman yang banyak digunakan oleh developer karena efisien dan mudah dipelajari serta dapat dijalankan di berbagai platform. Python biasanya secara default sudah terinstall pada sistem operasi linux, untuk melakukan pengecekan bisa menggunakan perintah 
+
+    python3 -V
+
+   ![python3 version](https://github.com/ardi2105/DEVOPS-BATCH-19/assets/151701736/ed9d86c9-bbeb-4141-b242-d5a25c85a6cd)
+
+#### 1. Install Packet Manager
+Jika nodeJs menggunakan npm sebagai package managernya, maka untuk python menggunakan pip, install pip dengan perintah 
+
+    sudo apt install python3-pip
+
+   ![install pip](https://github.com/ardi2105/DEVOPS-BATCH-19/assets/151701736/964130c4-d1a4-48e3-8787-91dc946145e2)
+
+dilanjutkan dengan instalasi flask dengan perintah 
+
+    pip install flask
+
+  ![install flask](https://github.com/ardi2105/DEVOPS-BATCH-19/assets/151701736/44202b19-2fbc-42b4-9a07-19f5923d7e97)
+
+Jika sudah kita bisa membuat sebuah aplikasi sederhana python3. Untuk membuat perintah buat terlebih dahulu script dalam file bernama index.py dengan perintah
+
+    nano index.py
+<br/>
+
+    from flask import Flask
+    app = Flask(__name__)
+    @app.route("/")
+    def helloworld():
+      return "Hello World"
+    if __name__ == "__main__":
+      app.run(host='10.182.205.169')
+      
+> note karena saya menggunakan virtual machine, maka dari itu saya menambahkan IP Adress virtual machine agar aplikasi dapat berjalan, IP Adress dapat disesuaikan. 
+
+   ![nano index](https://github.com/ardi2105/DEVOPS-BATCH-19/assets/151701736/f25868a5-917a-4c0d-b68e-76d2aae8fd6c)
+
+Jika sudah save script yang sudah dibuat dan keluar dari nano, kemudian jalankan aplikasi dengan perintah berikut
+
+    python3 index.py
+
+   ![running python](https://github.com/ardi2105/DEVOPS-BATCH-19/assets/151701736/5dedd425-0d11-4736-9906-6fb06fd9d138)
+
+   ![run python web](https://github.com/ardi2105/DEVOPS-BATCH-19/assets/151701736/46a7d6ab-2926-4bba-8be9-60335a12eff8)
+
+Bisa dicek bahwa aplikasi sudah berjalan dengan pada web dengan memasukan IP beserte Port.
+
 ## PM2 & Implementation
 
