@@ -172,7 +172,7 @@ Lakukan pengecekan go dengan perintah.
   ![go version](https://github.com/ardi2105/DEVOPS-BATCH-19/assets/151701736/f4a03949-af07-466c-959f-f4eb48c9fe1a)
 
 #### 5. Membuat aplikasi sederhana
-Untuk membuat sebuah aplikasi sederhana, untuk membuat aplikasi buat terlebih dahulu script dalam file bernama index.py dengan perintah.
+Untuk membuat sebuah aplikasi sederhana, untuk membuat aplikasi buat terlebih dahulu script dalam file bernama index.go dengan perintah.
 
     nano index.go
   <br/>
