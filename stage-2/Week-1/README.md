@@ -47,6 +47,3 @@ Server Untuk Backend dan Database : appserver
 	- Frontend (ex. amanda.studentdumbways.my.id)
 	- Backend (ex. api.amanda.studentdumbways.my.id)
 	- SSL CLOUDFLARE OFF, use certbot for generate certificate. Below is an example of a template for using API keys in Cloudflare using Certbot
-	```sh
-	dns_cloudflare_email = "demo.dumbways@gmail.com"
-	dns_coudflare_api_key = "000safaAGTy21666999LLop20521esWa"
