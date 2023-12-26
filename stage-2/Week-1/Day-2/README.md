@@ -43,3 +43,7 @@
 - Sequelize-cli
 - DNS : Cloudflare
 - SSL : letsencrypt
+
+## Langkah Pengerjaan 
+1. [setup-server&install-requirements](setup-server&install-requirements.md)
+2. [deploy-application&configuration](deploy-application&configuration.md)
