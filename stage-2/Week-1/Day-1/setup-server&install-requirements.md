@@ -1,0 +1,80 @@
+## Pembuatan VM Biznet & Install Kebutuhan Aplikasi
+Berikut adalah dokumentasi langkah langkah bagaimana melakukan pembuatan VM di Biznetgio serta instalasi aplikasi-aplikasi yang dibutuhkan untuk melakukan deploy aplikasi wayshub-frontend.
+
+
+
+1. Langkah pertama jika sudah memiliki akun login pada website [BiznetGio](portal.biznetgio.com) atau lakukan pendaftaran akun baru. 
+![!\[Alt text\](<biznet account.png>)](<setup-server&install-requirements/biznet account.png>)
+
+2. Jika sudah login, pada tampilan dashboard klik quick create lalu pilih NeoLite
+![!\[Alt text\](quick-create.png)](setup-server&install-requirements/quick-create.png)
+
+3. Saat sudah klik create, akan muncul tampilan untuk isi form, pada bagian ini isi form sesuai ketentuan atau keinginan.
+![ !\[Alt text\](create-server.png)](setup-server&install-requirements/create-server.png) 
+![ !\[Alt text\](create-server-1.png) ](setup-server&install-requirements/create-server-1.png)
+![ !\[Alt text\](create-server-2.png)](setup-server&install-requirements/create-server-2.png)
+Adapun keterangan pada saat pengisian 
+    - Service Name : Digunakan untuk mendefinisikan nama server, ex:Appserver, Gateway etc.
+    - Region : Merupakan keterangan dari letak server
+    - Product : Tipe dari produk yang ingin digunakan, berbeda tipe beda harga.
+    - Cycle : Bagaimana pembayaran akan dilakukan, apakah bulanan atau tahunan.
+    - Operating system : Sistem operasi yang akan digunakan oleh VM.
+    - Snapshot : Digunakan untuk melakukan backup secara otomatis.
+    - SSH Key : Digunakan untuk melakukan generate SSH Key yang berguna sebagai keamanan VM dalam melakukan remote akses.
+    - Username : Username yang digunakan untuk melakukan remote console .
+    - Password : Password yang digunakan untuk melakukan remote console.
+
+4. Jika sudah, pilih pembayaran dan jika berhasil maka pada tampilan dashboard akan tampil server yang sudah dibuat.
+![!\[Alt text\](create-server-3.png) ](setup-server&install-requirements/create-server-3.png)
+![!\[Alt text\](server-created.png)](setup-server&install-requirements/server-created.png)
+Pada saat server berhasil dibuat, SSH Key akan secara ototmatis terdownload sesuai dengan nama yang diisi pada form SSH Key sebelumnya. 
+![!\[Alt text\](created-ssh.png)](setup-server&install-requirements/created-ssh.png)
+
+5. Jika server sudah terbuat, coba lakukan remote console menggunakan terminal dengan ssh key yang sudah terdownload secara otomatis dan tersimpan pada folder download. Masuk ke dalam directory download kemudian remote server menggunakan ssh key dengan perintah :
+
+    ssh -i ssh-key-gio.pem ardi-gio@103.175.218.154
+
+    ![!\[Alt text\](remote-server-1.png)](setup-server&install-requirements/remote-server-1.png)
+    Jika remote berhasil, maka akan terdapat keterangan berhasik terhubung. 
+    
+    >Penjelasan tentang ssh key terdapat pada [ssh-key-configuration](ssh-key-configuration.md) serta bagaimana menggunakan ssh key pada server. 
+
+6. Lakukan update dan upgrade agar tidak terdapat error pada file system saat melakukan instalasi aplikasi ataupun saat melakukan konfigurasi.
+![!\[Alt text\](update&upgrade-1.png)](setup-server&install-requirements/update&upgrade-1.png)
+
+7. Membuat satu user baru serta memasukan ke dalam group sudo untuk digunakan dalam menjalankan aplikasi dengan perintah.
+
+    sudo adduser voxy
+
+    sudo usermod -aG sudo voxy
+
+    ![!\[Alt text\](adduser&usermod.png)](setup-server&install-requirements/adduser&usermod.png)
+
+8. Login ke dalam user yang sudah dibuat, untuk pengaturan ssh dapat dilihat pada [ssh-key-configuration](ssh-key-configuration.md).
+![!\[Alt text\](login-voxy.png)](setup-server&install-requirements/login-voxy.png)
+
+9. Lakukan instalasi web server nginx yang akan digunakan untuk reverse proxy.
+
+    sudo apt install nginx
+
+    ![!\[Alt text\](install-nginx-2.png)](setup-server&install-requirements/install-nginx-2.png)
+
+10. Lakukan install nvm yang akan digunakan oleh aplikasi dengan perintah :
+
+    curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
+
+    ![!\[Alt text\](install-nvm-1.png)](setup-server&install-requirements/install-nvm-1.png)
+
+    Lakukan install node versi 14 yang akan digunakan aplikasi dengan perintah : 
+
+    nvm install 14
+
+    ![!\[Alt text\](nvm-install-14-1.png)](setup-server&install-requirements/nvm-install-14-1.png)
+
+11. Install PM2 yang akan digunakan untuk menjalankan aplikasi secara background dengan perintah :
+
+    npm install pm2 -g
+
+    ![!\[Alt text\](install-pm2-1.png)](setup-server&install-requirements/install-pm2-1.png)
+
+Jika server serta aplikasi yang dibutuhkan sudah siap, maka tinggal melakukan deploy aplikasi. Langkah-langkah deploy dapat dilihat pada [deploy-application&configuration](deploy-application&configuration.md)

@@ -1,0 +1,66 @@
+## Setting SSH KEYS Pada Server
+SSH adalah sebuah protokol administrasi yang memungkinkan user untuk mengakses dan memodifikasi berbagai macam pengaturan maupun file yang ada di dalam server. SSH merupakan pengembangan dari Telnet yang sebelumnya dianggap tidak aman karena tidak adanya proses enkripsi.
+
+### SSH Pada Server BiznetGio
+Pada saat membuat server pada VM BiznetGio, ketika menggunakan plihan create ssh maka secara otomatis akan terdownload file ssh private yang berfungsi sebagai kunci, sedangkan pada server VM akan terdapat gembok yang akan dimasukan ke dalam file `authorized_keys`.
+
+Membuat ssh key dengan nama `ssh-key-gio`
+![!\[Alt text\](create-server-1.png)](ssh-key-configuration/create-server-1.png)
+Secara otomatis akan mendownload file `ssh-key-gio.pem` yang akan digunakan sebagai `ssh private key` atau kunci untuk mengakses server.
+![!\[Alt text\](created-ssh.png)](ssh-key-configuration/created-ssh.png)
+
+Terdapat `authorized_keys` yang berisi kode dari ssh public yang dapat dianalogikan sebagai gembok yang akan dibuka menggunakan kunci yang telah di download sebelumnya.
+![!\[Alt text\](cat-authorized.png)](ssh-key-configuration/cat-authorized.png)
+
+#### Mengakses server
+Untuk mengakses server yang sudah dibuat sebelumnya, harus menggunakan `ssh key private` atau kunci yaitu `ssh-key-gio.pem` yang terdapat pada folder download dengan masuk ke direktori downloads dan masukan perintah 
+
+    ssh -i ardi-gio@103.175.218.154
+
+![!\[Alt text\](login-ssh-i.png)](ssh-key-configuration/login-ssh-i.png)
+Dapat dilihat bahwa login berhasil menggunakan ssh key bawaan dari VM yang disediakan oleh BiznetGio.
+
+Penjelasannya adalah sebagai berikut : 
+1. `ssh-key-gio` yang telah terdownload sebelumnya berisikan `private-key` yang digunakan sebagai kunci untuk mengakses server VM BiznetGIo.
+2. Server VM BiznetGio secara otomatis akan membuat file `authorized_keys` yang dianalogikan sebagai gembok sehingga server dapat diremote oleh komputer local.
+
+### Akses Server Menggunakan SSH-KEYGEN
+Untuk mengakses server dapat juga menggunakan ssh key yang terdapat pada komputer lokal. Nantinya agar komputer local dapat meremote server menggunakan ssh tersebut, harus memasukan gembok atau ssh-key public yang ada di lokal ke dalam file `authorized_keys`. 
+
+Lakukan `ssh-keygen` pada komputer lokal yang akan membuat secara otomatis ssh-key private dan public.
+![!\[Alt text\](ssh-keygen.png) ](ssh-key-configuration/ssh-keygen.png)
+copy ssh-key public pada file id_rsa.pub.
+![!\[Alt text\](ssh-public-lokal.png)](ssh-key-configuration/ssh-public-lokal.png) 
+Copy text ssh-key public yang sudah di copy ke dalam file `authorized_keys` server. 
+![!\[Alt text\](sudo-nano-authorized.png) ](ssh-key-configuration/sudo-nano-authorized.png)
+![!\[Alt text\](input-publicsshlocal.png) ](ssh-key-configuration/input-publicsshlocal.png)
+Lakukan pengujian dengan melakukan login.
+![!\[Alt text\](server-login.png)](ssh-key-configuration/server-login.png)
+Dapat dilihat bahwa komputer lokal langsung terhubung dengan server tanpa memasukan password ataupun ssh-key dari BiznetGio.
+
+### SSH-KEY Pada User Baru 
+Pada dokumentasi sebelumnya yaitu [setup-server&install-requirements](setup-server&install-requirements.md), secara default user baru tersebut tidak akan dapat diakses karena tidak terdapat file `authorized_keys` seperti pada server `ardi-gio`, sehingga untuk login awal dapat menggunakan password dengan mengubah config `sshd_config` pada server dan mengubah `passwordauthentication` menjadi yes. 
+
+Masuk ke dalam direktori cd /etc/ssh/, kemudian edit file sshd_config
+![!\[Alt text\](sshd_config.png) ](ssh-key-configuration/sshd_config.png)
+Ubah pada bagian `passwordAuthentication` menjadi `yes`
+![!\[Alt text\](sshd_config_1.png)](ssh-key-configuration/sshd_config_1.png) 
+restart sshd
+![!\[Alt text\](restart-sshd.png)](ssh-key-configuration/restart-sshd.png) 
+Login kembali ke server user voxy, maka untuk login dapat menggunakan password 
+![!\[Alt text\](login-voxy-pwd.png)](ssh-key-configuration/login-voxy-pwd.png)
+
+Agar server user voxy dapat diakses tanpa menggunakan password, hal yang sama seperti pada server ardi-gio dapat dilakukan yaitu dengan memasukan `id_rsa.pub` lokal ke dalam file `authorized_keys`. 
+
+Login terlebih dahulu ke dalam server voxy dengan password
+![!\[Alt text\](login-voxy-pwd-1.png) ](ssh-key-configuration/login-voxy-pwd-1.png)
+Buat folder .ssh untuk menyimpan `authorized_keys`
+![!\[Alt text\](mkdir-.ssh.png) ](ssh-key-configuration/mkdir-.ssh.png)
+Copy `id_rsa.pub` yang terdapat pada komputer lokal
+![!\[Alt text\](ssh-public-lokal-1.png)](ssh-key-configuration/ssh-public-lokal-1.png) 
+Buka editor nano dengan sekaligus membuat file `authorized_keys`
+![!\[Alt text\](authorized_keys-voyx.png) ](ssh-key-configuration/authorized_keys-voyx.png)
+Paste isi dari `id_rsa.pub` lokal ke dalam file `authorized_keys` kemudian simpan
+![!\[Alt text\](authorized_keys-voxy-1.png)](ssh-key-configuration/authorized_keys-voxy-1.png)
+Lalu login, dapat terlihat bahwa login dari lokal ke server voxy tidak lagi memerlukan password. 
+![!\[Alt text\](login-voxy-pubkey.png)](ssh-key-configuration/login-voxy-pubkey.png)
