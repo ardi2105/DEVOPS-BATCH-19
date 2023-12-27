@@ -76,6 +76,10 @@ Server kali ini menggunakan ssh key yang sama seperti pada saat setup server gat
 
     ![Alt text](setup-server&install-requirements/npm-install-sequelize-cli.png)
 
-Jika server serta aplikasi yang dibutuhkan sudah siap, maka tinggal melakukan deploy aplikasi. Langkah-langkah deploy dapat dilihat pada [deploy-application&configuration](deploy-application&configuration.md)
+13. Install Certbot untuk melakukan generate certificate SSL
+
+    ![Alt text](setup-server&install-requirements/install-certbot.png)
+
+Jika server serta aplikasi yang dibutuhkan sudah siap, maka tinggal melakukan deploy aplikasi. Dokumentasi langkah-langkah deploy dapat dilihat pada [deploy-application&configuration](deploy-application&configuration.md)
 
 
