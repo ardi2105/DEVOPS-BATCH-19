@@ -3,11 +3,6 @@
 
 Pada minggu ini saya mengerjakan bagaimana melakukan deploy aplikasi frontend dan backend yang terhubung dengan database serta bagaimana aplikasi tersebut dapat diakses oleh publik melalui internet. Terdapat tugas harian yang akan dikerjakan secara berkala yaitu apa saja yang harus dikerjakan setiap selesai kelas serta melakukan riset lebih mendalam terhadap hal yang dikerjakan. Adapun tugas tugas yang diberikan dibagi setiap harinya, antara lain :
 
-#### SERVER NAME
-
-Server Untuk Frontend dan Web Server : gateway<br/> 
-Server Untuk Backend dan Database : appserver
-
 #### [Hari Pertama](Day-1/README.md)
 1. Membuat VM di [BiznetGio](biznetgio.com) tipe _NeoLite XS 1.1_ dengan spesifikasi 1 CPU, 1 GB RAM, 60 GB Storage dengan OS Ubuntu 20.04/22.04.
 
@@ -47,3 +42,8 @@ Server Untuk Backend dan Database : appserver
 	- Frontend (ex. amanda.studentdumbways.my.id)
 	- Backend (ex. api.amanda.studentdumbways.my.id)
 	- SSL CLOUDFLARE OFF, use certbot for generate certificate. 
+
+#### SERVER NAME
+
+Server Untuk Frontend dan Web Server : gateway<br/> 
+Server Untuk Backend dan Database : appserver
