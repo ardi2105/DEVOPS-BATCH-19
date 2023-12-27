@@ -46,4 +46,4 @@ Server Untuk Backend dan Database : appserver
 6. Web Server
 	- Frontend (ex. amanda.studentdumbways.my.id)
 	- Backend (ex. api.amanda.studentdumbways.my.id)
-	- SSL CLOUDFLARE OFF, use certbot for generate certificate. Below is an example of a template for using API keys in Cloudflare using Certbot
+	- SSL CLOUDFLARE OFF, use certbot for generate certificate. 

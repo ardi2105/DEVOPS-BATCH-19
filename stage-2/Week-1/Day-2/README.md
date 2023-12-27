@@ -31,7 +31,7 @@
 - Web Server
 	- Frontend (ex. amanda.studentdumbways.my.id)
 	- Backend (ex. api.amanda.studentdumbways.my.id)
-	- SSL CLOUDFLARE OFF, use certbot for generate certificate. Below is an example of a template for using API keys in Cloudflare using Certbot
+	- SSL CLOUDFLARE OFF, use certbot for generate certificate. 
 
 ## Requirements
 - Server : BiznetGio NeoLite XS 1.1 (1CPU, 1GB RAM, 60 Disk Storage)
