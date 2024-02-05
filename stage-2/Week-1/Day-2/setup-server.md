@@ -29,7 +29,7 @@ Server kali ini menggunakan ssh key yang sama seperti pada saat setup server gat
 
 5. Jika server sudah terbuat, coba lakukan remote console menggunakan terminal dengan ssh key yang sudah terdownload secara otomatis dan tersimpan pada folder download. Masuk ke dalam directory download kemudian remote server menggunakan ssh key dengan perintah :
 
-    ssh -i ssh-key-gio.pem zerigio@103.175.218.154
+    ```ssh -i ssh-key-gio.pem zerogio@103.175.218.154```
 
     ![Alt text](setup-server&install-requirements/remote-server.png)
     

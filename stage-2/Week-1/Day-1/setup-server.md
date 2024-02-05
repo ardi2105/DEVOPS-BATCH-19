@@ -2,7 +2,6 @@
 Berikut adalah dokumentasi langkah langkah bagaimana melakukan pembuatan VM di Biznetgio serta instalasi aplikasi-aplikasi yang dibutuhkan untuk melakukan deploy aplikasi wayshub-frontend.
 
 
-
 1. Langkah pertama jika sudah memiliki akun login pada website [BiznetGio](portal.biznetgio.com) atau lakukan pendaftaran akun baru. 
 ![!\[Alt text\](<biznet account.png>)](<setup-server&install-requirements/biznet account.png>)
 
@@ -32,10 +31,10 @@ Pada saat server berhasil dibuat, SSH Key akan secara ototmatis terdownload sesu
 
 5. Jika server sudah terbuat, coba lakukan remote console menggunakan terminal dengan ssh key yang sudah terdownload secara otomatis dan tersimpan pada folder download. Masuk ke dalam directory download kemudian remote server menggunakan ssh key dengan perintah :
 
-    ssh -i ssh-key-gio.pem ardi-gio@103.175.218.154
+    ```ssh -i ssh-key-gio.pem ardi-gio@103.175.218.154```
 
     ![!\[Alt text\](remote-server-1.png)](setup-server&install-requirements/remote-server-1.png)
-    Jika remote berhasil, maka akan terdapat keterangan berhasik terhubung. 
+    Jika remote berhasil, maka akan terdapat keterangan berhasil terhubung. 
     
     >Penjelasan tentang ssh key terdapat pada [ssh-key-configuration](ssh-key-configuration.md) serta bagaimana menggunakan ssh key pada server. 
 
