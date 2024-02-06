@@ -31,7 +31,9 @@ Pada saat server berhasil dibuat, SSH Key akan secara ototmatis terdownload sesu
 
 5. Jika server sudah terbuat, coba lakukan remote console menggunakan terminal dengan ssh key yang sudah terdownload secara otomatis dan tersimpan pada folder download. Masuk ke dalam directory download kemudian remote server menggunakan ssh key dengan perintah :
 
-    ```ssh -i ssh-key-gio.pem ardi-gio@103.175.218.154```
+    ```
+    ssh -i ssh-key-gio.pem ardi-gio@103.175.218.154
+    ```
 
     ![!\[Alt text\](remote-server-1.png)](setup-server/remote-server-1.png)
     Jika remote berhasil, maka akan terdapat keterangan berhasil terhubung. 
@@ -43,9 +45,13 @@ Pada saat server berhasil dibuat, SSH Key akan secara ototmatis terdownload sesu
 
 7. Membuat satu user baru serta memasukan ke dalam group sudo untuk digunakan dalam menjalankan aplikasi dengan perintah.
 
+    ```
     sudo adduser voxy
+    ```
 
+    ```
     sudo usermod -aG sudo voxy
+    ```
 
     ![!\[Alt text\](adduser&usermod.png)](setup-server/adduser&usermod.png)
 
@@ -53,27 +59,29 @@ Pada saat server berhasil dibuat, SSH Key akan secara ototmatis terdownload sesu
 ![!\[Alt text\](login-voxy.png)](setup-server/login-voxy.png)
 
 9. Lakukan instalasi web server nginx yang akan digunakan untuk reverse proxy.
-
+    ```
     sudo apt install nginx
-
+    ```
     ![!\[Alt text\](install-nginx-2.png)](setup-server/install-nginx-2.png)
 
 10. Lakukan install nvm yang akan digunakan oleh aplikasi dengan perintah :
 
+    ```
     curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
+    ```
 
     ![!\[Alt text\](install-nvm-1.png)](setup-server/install-nvm-1.png)
 
     Lakukan install node versi 14 yang akan digunakan aplikasi dengan perintah : 
-
+    ```
     nvm install 14
-
+    ```
     ![!\[Alt text\](nvm-install-14-1.png)](setup-server/nvm-install-14-1.png)
 
 11. Install PM2 yang akan digunakan untuk menjalankan aplikasi secara background dengan perintah :
-
+    ```
     npm install pm2 -g
-
+    ```
     ![!\[Alt text\](install-pm2-1.png)](setup-server/install-pm2-1.png)
 
 Jika server serta aplikasi yang dibutuhkan sudah siap, maka tinggal melakukan deploy aplikasi. Langkah-langkah deploy dapat dilihat pada [deploy-application&configuration](deploy-application&configuration.md)

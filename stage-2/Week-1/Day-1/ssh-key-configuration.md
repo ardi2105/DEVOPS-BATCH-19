@@ -14,9 +14,9 @@ Terdapat `authorized_keys` yang berisi kode dari ssh public yang dapat dianalogi
 
 #### Mengakses server
 Untuk mengakses server yang sudah dibuat sebelumnya, harus menggunakan `ssh key private` atau kunci yaitu `ssh-key-gio.pem` yang terdapat pada folder download dengan masuk ke direktori downloads dan masukan perintah 
-
-    ssh -i ardi-gio@103.175.218.154
-
+```
+ssh -i ardi-gio@103.175.218.154
+```
 ![!\[Alt text\](login-ssh-i.png)](ssh-key-configuration/login-ssh-i.png)
 Dapat dilihat bahwa login berhasil menggunakan ssh key bawaan dari VM yang disediakan oleh BiznetGio.
 
