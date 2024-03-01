@@ -14,6 +14,6 @@
 
 ## Langkah Pengerjaan 
 Dokumentasi langkah pengerjaan terbagi menjadi beberapa bagian antara lain 
-1. [Setup Server](setup-server.md)
-2. [SSH Key Configuration](ssh-key-configuration.md)
-3. [Deploy Application](deploy-application.md)
+1. [Setup Server](<1. setup-server.md>)
+2. [SSH Key Configuration](<2. ssh-key-configuration.md>)
+3. [Deploy Application](<3. deploy-application.md>)
