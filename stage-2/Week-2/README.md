@@ -3,10 +3,10 @@
 
 Pada minggu ini saya mengerjakan bagaimana melakukan deploy aplikasi frontend dan backend menggunakan Docker, Jenkins serta Gitlabci hingga aplikasi tersebut dapat diakses oleh publik melalui internet serta dapat melakukan automation aplikasi. Terdapat tugas harian yang akan dikerjakan secara berkala yaitu apa saja yang harus dikerjakan setiap selesai kelas serta melakukan riset lebih mendalam terhadap hal yang dikerjakan. Adapun tugas tugas yang diberikan dibagi setiap harinya, antara lain :
 
-#### [Hari Ketiga](Day-3/docker-task.md)
-1. Menjelaskan langkah-langkah melakukan rebuild server BiznetGio, dan ubah menggunakan os ubuntu22
+#### [Hari Ketiga](Day-3/README.md)
+1. Menjelaskan langkah-langkah melakukan rebuild server BiznetGio, dan ubah menggunakan OS Ubuntu versi 22.04
 
-2. Setelah server sudah selesai ter rebuild, buatlah suatu user baru dengan nama **team kalian** lalu implementasikan penggunaan ssh dengan menggunakan **PASSWORD ONLY** tanpa SSH-KEY.
+2. Setelah server sudah selesai rebuild, membuat suatu user baru dengan nama **team kalian** lalu implementasikan penggunaan ssh dengan menggunakan **PASSWORD ONLY** tanpa SSH-KEY.
 
 3. Membuat bash script untuk melakukan installasi docker. 
 
@@ -36,7 +36,7 @@ Pada minggu ini saya mengerjakan bagaimana melakukan deploy aplikasi frontend da
 
 11. Aplikasi dapat berjalan dengan sesuai seperti melakukan login/register.
 
-#### [Hari Keempat](Day-4/jenkins-task.md)
+#### [Hari Keempat](Day-4/README.md)
 1. Jelasakan langkah-langkah melakukan rebuild server BiznetGio, dan ubah menggunakan os ubuntu22
 
 2. Installasi Jenkins on top Docker or native
@@ -63,7 +63,7 @@ Pada minggu ini saya mengerjakan bagaimana melakukan deploy aplikasi frontend da
 
 8. Job notification ke discord
 
-#### [Hari Kelima](Day-5/gitlab-task.md)
+#### [Hari Kelima](Day-5/README.md)
 1. Buat akun di gitlab.com
 
 2. Push SCM dari local-server ke gitlab

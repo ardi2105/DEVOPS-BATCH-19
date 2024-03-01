@@ -3,7 +3,7 @@
 
 Pada minggu ini saya mengerjakan bagaimana menggunakan kubernetes untuk membuat sebuah cluster, instalasi aplikasi menggunakan kubernets script serta melakukan install aplikasi dan uninstall suatu aplikasi.
 
-#### Hari Pertama
+#### [Hari Kesembilan](Day-1/kubernetes.md)
 1. Membuat sebuah cluster menggunakan k3s yang berisikan 2 node as a master and worker.
 
 2. Install ingress nginx using manifest

@@ -15,11 +15,11 @@
     - Generated SSL certificate
 
 ## Requirements
-- Server : BiznetGio NeoLite XS 2.2 (2CPU, 2GB RAM, 60 Disk Storage)
-- Docker
-- Webserver : Nginx
-- Frontend Apps : NPM & NVM 14.x Version, [wayshub-frontend clone](https://github.com/dumbwaysdev/wayshub-frontend)
-- DNS : Cloudflare
+- Server : 
+  - BiznetGio NeoLite XS 1.1 (1CPU, 1GB RAM, 60 Disk Storage)
+  - BiznetGio NeoLite XS 2.2 (2CPU, 2GB RAM, 60 Disk Storage)
+- VsCode For Making Ansible Script
+- [Ansible](https://docs.ansible.com/ansible/latest/installation_guide/index.html)
 
 ## Langkah Pengerjaan
-
+1. [Langkah Pengerjaan Ansible](ansible.md)

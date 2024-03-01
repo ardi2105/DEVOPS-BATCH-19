@@ -1,9 +1,9 @@
 # DEVOPS-BATCH19-STAGE2
-#### Weekly Task - Week 2 - Ardi Solehuddin
+#### Weekly Task - Week 3 - Ardi Solehuddin
 
 Pada minggu ini saya mengerjakan bagaimana melakukan monitoring menggunakan grafhana serta bagaimana cara menggunakan IAC ansible. Terdapat tugas harian yang akan dikerjakan secara berkala yaitu apa saja yang harus dikerjakan setiap selesai kelas serta melakukan riset lebih mendalam terhadap hal yang dikerjakan. Adapun tugas tugas yang diberikan dibagi setiap harinya, antara lain :
 
-#### Hari Pertama
+#### [Hari Keenam](Day-6/README.md)
 1. Setup node-exporter, prometheus dan Grafana menggunakan docker
 
 2. install node-exporter di appserver & gateway
@@ -24,11 +24,11 @@ Pada minggu ini saya mengerjakan bagaimana melakukan monitoring menggunakan graf
          - Ketentuan alerting yang harus dibuat
            - CPU Usage over 20%
            - RAM Usage over 75%
-    -  Monitoring specific container
+   -  Monitoring specific container
 	 - deploy application frontend di app-server
          - monitoring frontend container
 
-#### Hari Kedua
+#### [Hari Ketujuh](Day-7/README.md)
 1. [Local]
     - Buat konfigurasi Ansible & sebisa mungkin maksimalkan penggunaan ansbile untuk melakukan semua setup.
 

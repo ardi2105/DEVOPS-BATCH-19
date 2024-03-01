@@ -25,11 +25,13 @@
          - monitoring frontend container
 
 ## Requirements
-- Server : BiznetGio NeoLite XS 2.2 (2CPU, 2GB RAM, 60 Disk Storage)
+- Server : 
+  - BiznetGio NeoLite XS 1.1 (1CPU, 1GB RAM, 60 Disk Storage)
+  - BiznetGio NeoLite XS 2.2 (2CPU, 2GB RAM, 60 Disk Storage)
+- Node-Exporter, Prometheus dan Grafana
 - Docker
 - Webserver : Nginx
-- Frontend Apps : NPM & NVM 14.x Version, [wayshub-frontend clone](https://github.com/dumbwaysdev/wayshub-frontend)
 - DNS : Cloudflare
 
 ## Langkah Pengerjaan
-
+1. [Langkah Pengerjaan Monitoring](monitoring.md)
