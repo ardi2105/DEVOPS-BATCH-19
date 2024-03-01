@@ -23,8 +23,11 @@
 ## Requirements
 - Server : BiznetGio NeoLite XS 2.2 (2CPU, 2GB RAM, 60 Disk Storage)
 - Docker
-- Webserver : Nginx
+- Jenkins
 - Frontend Apps : NPM & NVM 14.x Version, [wayshub-frontend clone](https://github.com/dumbwaysdev/wayshub-frontend)
+- Backend Apps : NPM & NVM 14.x Version, [wayshub-backend clone](https://github.com/dumbwaysdev/wayshub-backend)
+- [Docker Registry](https://hub.docker.com/)
+- Webserver : Nginx
 - DNS : Cloudflare
 
 ## Langkah Pengerjaan
