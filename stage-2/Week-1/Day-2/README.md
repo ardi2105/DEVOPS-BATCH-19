@@ -45,5 +45,5 @@
 - SSL : letsencrypt
 
 ## Langkah Pengerjaan 
-1. [setup-server&install-requirements](setup-server&install-requirements.md)
-2. [deploy-application&configuration](deploy-application&configuration.md)
+1. [Setup Server](setup-server.md)
+2. [Deploy Application](deploy-application.md)
