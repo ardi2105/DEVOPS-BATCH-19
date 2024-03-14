@@ -41,4 +41,4 @@ Pada minggu ini saya berfokus pada pengerjaan konfigurasi infrastruktur mengguna
 Pada minggu ini saya mengerjakan bagaimana menggunakan kubernetes untuk membuat sebuah cluster, instalasi aplikasi menggunakan kubernets script
 
 [Week-5 : Final Task](stage-2/Week-5/README.md)
-Pada minggu terakhir terdapat final task di mana saya mengerjakan tugas akhir melakukan deployment aplikasi dengan semua tools yang telah dipelajari sebelumnya hingga dapat diakses oleh public yang dapat diakses pada url [ardi.studentdumbways.my.id](ardi.studentdumbways.my.id).   
+Pada minggu terakhir terdapat final task di mana saya mengerjakan tugas akhir melakukan deployment aplikasi dengan semua tools yang telah dipelajari sebelumnya hingga dapat diakses oleh public yang dapat diakses pada url https://ardi.studentdumbways.my.id.   
